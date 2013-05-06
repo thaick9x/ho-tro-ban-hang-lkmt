@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div id="header">
+  <p align="right">Tên nhân viên
+    <input type="button" name="Logout" id="Logout" value="Logout" />
+    <input type="button" name="Đăng nhập lại" id="Đăng nhập lại" value="Đăng nhập lại" />
+  <div align="right">Nhập tên sản phẩm cần tìm
+    <input type="text" name="textfield" id="textfield" />
+    <input type="submit" name="Search" id="button-search" value="Search" />
+  </div>
+</div>
+<div id="contentNVGD">
+  <div id="manufactor" style="height:auto;width:10%;float:left;">
+    <p align="center">Danh sách cần xuất kho</p>
+  </div>
+  <div id="manufactor" style="height:auto;width:10%;float:right;">
+    <p align="center">Danh sách đã xuất kho cần giao dịch</p>
+  </div>
+  <div id="manufactor2" style="heigh:auto;width:80%;float:right;">
+    <p align="center">Thông tin xuất kho</p>
+    <form id="xuatKho" name="xuatKho" method="post" action="">
+        <label>Tên khách hàng: </label>
+        <label id="nameKH">Trung</label>
+        <br />
+        <label>Số điện thoại: </label>
+        <label id="telKH">090756829</label>
+        <br />
+        <label>Địa chỉ: </label>
+        <label id="addressKH">441 dien bien phu</label>
+      <table width="100%" border="1" id="cart">
+        <tr>
+          <th scope="col">STT</th>
+          <th scope="col">Tên</th>
+          <th scope="col">Số lượng</th>
+          <th scope="col">Giá</th>
+        </tr>
+        <tr>
+          <th scope="col">1</th>
+          <th scope="col">i3</th>
+          <th scope="col"><label for="quantiy"></label>
+            <input type="text" name="quantiy" id="quantiy" /></th>
+          <th scope="col">2000000</th>
+        </tr>
+      </table>
+        <input type="submit" name="buttonXK" id="buttonXK" value="Xuất kho" />
+    </form>
+    <form id="giaoDich" name="giaoDich" method="post" action="">
+      <label>Tên khách hàng: </label>
+      <label id="nameKH">Trung</label>
+      <br />
+      <label>Số điện thoại: </label>
+      <label id="telKH">090756829</label>
+      <br />
+      <label>Địa chỉ: </label>
+      <label id="addressKH">441 dien bien phu</label>
+      <table width="100%" border="1" id="cart2">
+        <tr>
+          <th scope="col">STT</th>
+          <th scope="col">Tên</th>
+          <th scope="col">Số lượng</th>
+          <th scope="col">Giá</th>
+        </tr>
+        <tr>
+          <th scope="col">1</th>
+          <th scope="col">i3</th>
+          <th scope="col"><label for="quantiy2"></label>
+            <input type="text" name="quantiy2" id="quantiy2" /></th>
+          <th scope="col">2000000</th>
+        </tr>
+      </table>
+      <label>Tổng tiền: </label><label id="total">2000000<br />
+      </label>
+      <input type="submit" name="buttonXK2" id="saveInfoGD" value="Lưu giao dịch" />
+    </form>
+  </div>
+</div>
+</body>
+</html>
