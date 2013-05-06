@@ -51,32 +51,46 @@
         <input type="submit" name="buttonXK" id="buttonXK" value="Xuất kho" />
     </form>
     <form id="giaoDich" name="giaoDich" method="post" action="">
-      <label>Tên khách hàng: </label>
-      <label id="nameKH">Trung</label>
-      <br />
-      <label>Số điện thoại: </label>
-      <label id="telKH">090756829</label>
-      <br />
-      <label>Địa chỉ: </label>
-      <label id="addressKH">441 dien bien phu</label>
+        <p align="center">Thông tin giao dịch</p>
+        <label>Mã xuất kho: </label>
+      <label id="idXK">mã</label>
+        <br />
+        <label>Mã giao dịch: </label>
+      <label id="idGD">mã</label>
+        <br />
+        <label>Tên khách hàng: </label>
+        <label id="nameKH">Trung</label>
+        <br />
+        <label>Số điện thoại: </label>
+        <label id="telKH">090756829</label>
+        <br />
+        <label>Địa chỉ: </label>
+        <label id="addressKH">441 dien bien phu</label>
+        <br />
+        <label>Ngày GD: </label>
+        <label id="dateGD">5/6/2013</label>
+        <br />
+        <label>Ngày XK: </label>
+      <label id="dateXK">5/6/2013</label>
       <table width="100%" border="1" id="cart2">
         <tr>
           <th scope="col">STT</th>
           <th scope="col">Tên</th>
-          <th scope="col">Số lượng</th>
+          <th scope="col">Mã hàng</th>
+          <th scope="col">Ngày xuất kho</th>
           <th scope="col">Giá</th>
         </tr>
         <tr>
           <th scope="col">1</th>
           <th scope="col">i3</th>
-          <th scope="col"><label for="quantiy2"></label>
-            <input type="text" name="quantiy2" id="quantiy2" /></th>
+          <th scope="col">&nbsp;</th>
+          <th scope="col"><label for="quantiy2"></label></th>
           <th scope="col">2000000</th>
         </tr>
       </table>
       <label>Tổng tiền: </label><label id="total">2000000<br />
       </label>
-      <input type="submit" name="buttonXK2" id="saveInfoGD" value="Lưu giao dịch" />
+      <input type="submit" name="buttonXK2" id="saveInfoGD" value="Lưu giao dịch và xuất kho" />
     </form>
   </div>
 </div>
