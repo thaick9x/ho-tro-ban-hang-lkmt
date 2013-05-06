@@ -1,278 +1,79 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8">
 <title>Untitled Document</title>
 </head>
 
 <body>
-<p><img src="Logo.png" width="926" height="154" /></p>
-<form id="form1" name="form1" method="post" action="">
-  <p>Thông tin nhân viên
-    <input type="submit" name="Logout" id="Logout" value="Logout" />
-    <input type="submit" name="Đăng nhập lại" id="Đăng nhập lại" value="Đăng nhập lại" />
-  (góc phải)</p>
+<div id="header">
+  <p align="right">Tên nhân viên
+    <input type="button" name="Logout" id="Logout" value="Logout" />
+    <input type="button" name="Đăng nhập lại" id="Đăng nhập lại" value="Đăng nhập lại" />
+  </p>
+  <p align="right"><a href="#">Giỏ hàng</a> </p>
   <p>
-    <label for="textfield">Nhập tên sản phẩm cần tìm</label>
+  <label for="textfield">
+    <div align="right">
+  </label>
+  <div align="right">Nhập tên sản phẩm cần tìm
     <input type="text" name="textfield" id="textfield" />
-    <input type="submit" name="Search" id="Search" value="Submit" />
-  (góc phải)</p>
-</form>
-<table width="1026" height="533" border="1">
-  <tr>
-    <th width="265" scope="row"><p>Mainboard</p>
-      <table width="200" border="1">
-        <tr>
-          <th scope="row">Intel</th>
-        </tr>
-        <tr>
-          <th scope="row">AMD</th>
-        </tr>
-    </table></th>
-    <td width="474"><p>Hình</p>
-    <p>Tên</p>
-    <p>Hàng tồn:</p>
-    <form id="form2" name="form2" method="post" action="">
-      <label for="Quantity">Số lượng</label>
-      <input name="Quantity" type="text" id="Quantity" maxlength="3" />
-      <input type="submit" name="Chọn" id="Chọn" value="Chọn" />
-    </form></td>
-    <td width="180">&nbsp;</td>
-    <td width="35">&nbsp;</td>
-    <td width="38">&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row"><p>CPU</p>
-      <table width="200" border="1">
-        <tr>
-          <th scope="row">Intel</th>
-        </tr>
-        <tr>
-          <th scope="row">AMD</th>
-        </tr>
-    </table></th>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row"><p>RAM</p>
-      <table width="200" border="1">
-        <tr>
-          <th scope="row">Corsair</th>
-        </tr>
-        <tr>
-          <th scope="row">Gskill</th>
-        </tr>
-        <tr>
-          <th scope="row">Kingston</th>
-        </tr>
-      </table></th>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row"><p>VGA</p>
-      <table width="200" border="1">
-        <tr>
-          <th scope="row">Geforce</th>
-        </tr>
-        <tr>
-          <th scope="row">ATI</th>
-        </tr>
-      </table></th>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row"><p>HDD</p>
-      <table width="200" border="1">
-        <tr>
-          <th scope="row">Western Digital</th>
-        </tr>
-        <tr>
-          <th scope="row">Seagate</th>
-        </tr>
-    </table></th>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row"><p>Monitor</p>
-      <table width="200" border="1">
-        <tr>
-          <th scope="row">LG</th>
-        </tr>
-        <tr>
-          <th scope="row">Asus</th>
-        </tr>
-        <tr>
-          <th scope="row">BenQ-HP</th>
-        </tr>
-        <tr>
-          <th scope="row">Dell</th>
-        </tr>
-      </table></th>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row"><p>Case</p>
-      <table width="200" border="1">
-        <tr>
-          <th scope="row">Corsair</th>
-        </tr>
-        <tr>
-          <th scope="row">Cooler Master</th>
-        </tr>
-        <tr>
-          <th scope="row">Cougar</th>
-        </tr>
-        <tr>
-          <th scope="row">Patriot</th>
-        </tr>
-      </table></th>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row"><p>PSU</p>
-      <table width="200" border="1">
-        <tr>
-          <th scope="row">Corsair</th>
-        </tr>
-        <tr>
-          <th scope="row">Cooler Master</th>
-        </tr>
-        <tr>
-          <th scope="row">Seasonic</th>
-        </tr>
-        <tr>
-          <th scope="row"><p>FSP</p></th>
-        </tr>
-        <tr>
-          <th scope="row">ACbel</th>
-        </tr>
-      </table></th>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row"><p>Speaker</p>
-      <table width="200" border="1">
-        <tr>
-          <th scope="row">Logitech</th>
-        </tr>
-        <tr>
-          <th scope="row">Zalman</th>
-        </tr>
-      </table></th>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row"><p>Keyboard &amp; Mouse</p>
-      <table width="200" border="1">
-        <tr>
-          <th scope="row">Logitech</th>
-        </tr>
-        <tr>
-          <th scope="row">Gigabyte</th>
-        </tr>
-        <tr>
-          <th scope="row">Zalman</th>
-        </tr>
-      </table></th>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row"><p>Keyboard</p>
-      <table width="200" border="1">
-        <tr>
-          <th scope="row">Logitech</th>
-        </tr>
-        <tr>
-          <th scope="row">Razer</th>
-        </tr>
-        <tr>
-          <th scope="row">SteelSeries</th>
-        </tr>
-        <tr>
-          <th scope="row">CM Storm</th>
-        </tr>
-        <tr>
-          <th scope="row">Roccat</th>
-        </tr>
-    </table></th>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row"><p>Mouse</p>
-      <table width="200" border="1">
-        <tr>
-          <th scope="row">Razer</th>
-        </tr>
-        <tr>
-          <th scope="row">SteelSeries</th>
-        </tr>
-        <tr>
-          <th scope="row">Logitech</th>
-        </tr>
-        <tr>
-          <th scope="row">Roccat</th>
-        </tr>
-        <tr>
-          <th scope="row">CM Storm</th>
-        </tr>
-      </table></th>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row"><p>Mouse pads</p>
-      <table width="200" border="1">
-        <tr>
-          <th scope="row">Roccat</th>
-        </tr>
-        <tr>
-          <th scope="row">SteelSeries</th>
-        </tr>
-        <tr>
-          <th scope="row">Razer</th>
-        </tr>
-        <tr>
-          <th scope="row">Zalman</th>
-        </tr>
-      </table></th>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-</table>
+    <input type="submit" name="Search" id="button-search" value="Search" />
+  </div>
+</div>
+<div id="content" style="margin-bottom:0;width:100%;">
+    <div id="manufactor" style="heigh:auto;width:90%;float:right;">
+    <p align="center">Danh mục và thông tin sản phẩm</p>
+    <p>Hình linh kiện</p>
+    <p>Tên, giá, còn hay hết</p>
+    <form name="form1" method="post" action="">
+      <input type="button" name="button-cart" id="button-cart" value="Thêm vào giỏ">
+    </form>
+    
+  </div>
+  <div id="manufactor" style="height:auto;width:10%;float:inherit;">
+    <p align="center">CPU</p>
+    <div align="center">
+        <input name="cpu-intel" type="button" value="Intel"><br>
+        <input name="cpu-amd" type="button" value="AMD">
+    </div>
+  </div>
+  <div id="manufactor" style="auto:100px;width:10%;float:inherit;">
+    <p align="center">VGA</p>
+        <div align="center">
+        <input name="vga-gefore" type="button" value="Gefore"><br>
+        <input name="vga-ati" type="button" value="ATI">
+    </div>
+  </div>
+  <div id="manufactor" style="height:100px;width:10%;float:inherit;">
+    <p align="center">RAM</p>
+  </div>
+  <div id="manufactor" style="height:100px;width:10%;float:inherit;">
+    <p align="center">MainBoard</p>
+  </div>
+  <div id="manufactor" style="height:100px;width:10%;float:inherit;">
+    <p align="center">PSU</p>
+  </div>
+  <div id="manufactor" style="height:100px;width:10%;float:inherit;">
+    <p align="center">Monitor</p>
+  </div>
+  <div id="manufactor" style="height:100px;width:10%;float:inherit;">
+    <p align="center">Case</p>
+  </div>
+  <div id="manufactor" style="height:100px;width:10%;float:inherit;">
+    <p align="center">Keyboard</p>
+  </div>
+  <div id="manufactor" style="height:100px;width:10%;float:inherit;">
+    <p align="center">Mouse</p>
+  </div>
+  <div id="manufactor" style="height:100px;width:10%;float:inherit;">
+    <p align="center">Keyboard + Mouse</p>
+  </div>
+  <div id="manufactor" style="height:100px;width:10%;float:inherit;">
+    <p align="center">Mouse Pad</p>
+  </div>
+
+</div>
 <p>&nbsp;</p>
 </body>
 </html>
