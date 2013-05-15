@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <linhkien>
-<cpu>
-	<tenLK></tenLK>
+<cpu tenLK="">
 	<series>intel core i3</series>
 	<socket>LGA1366</socket>
 	<manutech>32 nm</manutech>
