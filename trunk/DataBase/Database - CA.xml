@@ -210,43 +210,43 @@
 
 
 <keyboard tenLK = "Logitech G710 920-003887 110 Normal Keys USB 2.0 Wired Gaming Plus Mechanical Keyboard">
-	<button></button>
+	<button>110</button>
 	<connector>USB 2.0</connector>
 	<sub></sub>
-	<size></size>
-	<manufacturer>Logitech</manufacturer>
+	<size>20" x 8.7" x 1.5"</size>
+	<manufacturer>IOGEAR</manufacturer>
 </keyboard>
 
-<keyboard tenLK = "">
+<keyboard tenLK = "Cooler Master CM Storm QuickFire Pro Mechanical Gaming Keyboard CherryMX Brown Switch USB">
 	<button></button>
-	<connector></connector>
+	<connector>USB 2.0 Full Speed</connector>
+	<sub></sub>
+	<size>17.9(L) x 6.1 (W) x 1.2(H) inch</size>
+	<manufacturer>Cooler Master</manufacturer>
+</keyboard>
+
+<keyboard tenLK = "Microsoft Natural Ergonomic Keyboard 4000">
+	<button>107</button>
+	<connector>USB</connector>
 	<sub></sub>
 	<size></size>
 	<manufacturer>IOGEAR</manufacturer>
 </keyboard>
 
-<keyboard tenLK = "">
+<keyboard tenLK = "RAZER Blackwidow Ultimate 2013 RZ03-00381900-R3U1 Black USB Wired Elite Mechanical Gaming Keyboard">
 	<button></button>
-	<connector></connector>
+	<connector>USB</connector>
 	<sub></sub>
-	<size></size>
-	<manufacturer>IOGEAR</manufacturer>
+	<size>18.72" x 6.74" x 0.79"</size>
+	<manufacturer>RAZER</manufacturer>
 </keyboard>
 
-<keyboard tenLK = "">
-	<button></button>
-	<connector></connector>
+<keyboard tenLK = "SIIG JK-WR0812-S1 Black 102 Normal Keys 10 Function Keys USB RF Wireless Slim Multimedia Keyboard">
+	<button>102</button>
+	<connector>USB</connector>
 	<sub></sub>
-	<size></size>
-	<manufacturer>IOGEAR</manufacturer>
-</keyboard>
-
-<keyboard tenLK = "">
-	<button></button>
-	<connector></connector>
-	<sub></sub>
-	<size></size>
-	<manufacturer>IOGEAR</manufacturer>
+	<size>17 3/8" (L) x 6 5/16" (W) x 13/16" (H) (tilt adjust legs closed)</size>
+	<manufacturer>SIIG</manufacturer>
 </keyboard>
 
 
