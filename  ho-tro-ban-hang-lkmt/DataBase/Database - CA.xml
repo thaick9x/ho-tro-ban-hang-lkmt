@@ -1,0 +1,553 @@
+<ram tenLK = "CORSAIR 1GB 200-Pin DDR2 SO-DIMM DDR2 667 (PC2 5300) Laptop Memory Model VS1GSDS667D2">
+	<configuration></configuration>
+	<frequency>PC2 5300</frequency>
+	<bandwich>667</bandwich>
+	<capacity>1GB</capacity>
+	<type>200-Pin DDR2 SO-DIMM</type>
+	<series></series>
+	<manufacturer>CORSAIR</manufacturer>
+</ram>
+
+<ram tenLK = "Mushkin Enhanced Essentials 8GB 204-Pin DDR3 SO-DIMM DDR3 1333 (PC3 10600) Laptop Memory Model 992020">
+	<configuration></configuration>
+	<frequency>PC3 10600</frequency>
+	<bandwich>1333</bandwich>
+	<capacity>8GB</capacity>
+	<type>204-Pin DDR3 SO-DIMM</type>
+	<series>Essentials</series>
+	<manufacturer>Mushkin Enhanced</manufacturer>
+</ram>
+
+<ram tenLK = "Kingston 4GB 240-Pin DDR3 SDRAM DDR3 1333 (PC3 10600) Desktop Memory Model KVR1333D3N9/4G">
+	<configuration></configuration>
+	<frequency>PC3 10600</frequency>
+	<bandwich>1333</bandwich>
+	<capacity>4GB</capacity>
+	<type>240-Pin DDR3 SDRAM</type>
+	<series></series>
+	<manufacturer>Kingston</manufacturer>
+</ram>
+
+<ram tenLK = "G.SKILL 4GB 204-Pin DDR3 SO-DIMM DDR3 1600 (PC3 12800) Laptop Memory Model F3-12800CL11S-4GBSQ">
+	<configuration></configuration>
+	<frequency>PC3 12800</frequency>
+	<bandwich>1600MHz</bandwich>
+	<capacity>4GB</capacity>
+	<type>204-Pin DDR3 SO-DIMM</type>
+	<series></series>
+	<manufacturer>G.SKILL</manufacturer>
+</ram>
+
+<ram tenLK = "ADATA 8GB 204-Pin DDR3 SO-DIMM DDR3 1333 (PC3 10600) Laptop Memory Model AD3S1333W8G9-S">
+	<configuration></configuration>
+	<frequency>PC3 10600</frequency>
+	<bandwich>1333</bandwich>
+	<capacity>8GB</capacity>
+	<type>204-Pin DDR3 SO-DIMM</type>
+	<series></series>
+	<manufacturer>ADATA</manufacturer>
+</ram>
+
+
+
+
+
+
+
+<vga tenLK = "GV-N84S-512I">
+	<chipset>GeForce 8400 GS</chipset>
+	<chipsetManu>NVIDIA</chipsetManu>
+	<coreClock>450 MHz</coreClock>
+	<memClock>800 MHz</memClock>
+	<bus>64 bit</bus>
+	<memType>GDDR2</memType>
+	<busType>PCI-E 2.0</busType>
+	<busSpeed></busSpeed>
+	<shader>1125 MHz</shader>
+	<digitalReso>2560 x 1600</digitalReso>
+	<vgaReso>2048 x 1536</vgaReso>
+	<power>300W</power>
+	<connect></connect>
+	<manufacturer>GIGABYTE</manufacturer>
+</vga>
+
+<vga tenLK = "GV-R799D5-6GD-B">
+	<chipset>Radeon HD 7990</chipset>
+	<chipsetManu>AMD</chipsetManu>
+	<coreClock>Base 950 MHz; Boost 1000MHz</coreClock>
+	<memClock>6000 MHz</memClock>
+	<bus>768 bit</bus>
+	<memType>GDDR5</memType>
+	<busType>PCI-E 3.0</busType>
+	<busSpeed></busSpeed>
+	<shader></shader>
+	<digitalReso>2560 x 1600</digitalReso>
+	<vgaReso>2048 x 1536</vgaReso>
+	<power>750W</power>
+	<connect></connect>
+	<manufacturer>GIGABYTE</manufacturer>
+</vga>
+
+<vga tenLK = "GV-N84S-512I">
+	<chipset>GeForce 8400 GS</chipset>
+	<chipsetManu>NVIDIA</chipsetManu>
+	<coreClock>450 MHz</coreClock>
+	<memClock>800 MHz</memClock>
+	<bus>64 bit</bus>
+	<memType>GDDR2</memType>
+	<busType>PCI-E 2.0</busType>
+	<busSpeed></busSpeed>
+	<shader>1125 MHz</shader>
+	<digitalReso>2560 x 1600</digitalReso>
+	<vgaReso>2048 x 1536</vgaReso>
+	<power></power>
+	<connect></connect>
+	<manufacturer>GIGABYTE</manufacturer>
+</vga>
+
+<vga tenLK = "GV-R799D5-6GD-B">
+	<chipset>Radeon HD 7990</chipset>
+	<chipsetManu>AMD</chipsetManu>
+	<coreClock>Base 950 MHz; Boost 1000MHz</coreClock>
+	<memClock>6000 MHz</memClock>
+	<bus>768 bit</bus>
+	<memType>GDDR5</memType>
+	<busType>PCI-E 3.0</busType>
+	<busSpeed></busSpeed>
+	<shader></shader>
+	<digitalReso>2560 x 1600</digitalReso>
+	<vgaReso>2048 x 1536</vgaReso>
+	<power>750W</power>
+	<connect></connect>
+	<manufacturer>GIGABYTE</manufacturer>
+</vga>
+
+<vga tenLK = "GV-NTITAN-6GD-B">
+	<chipset>GeForce GTX TITAN</chipset>
+	<chipsetManu>NVIDIA</chipsetManu>
+	<coreClock>BASE:837MHz ; BOOST:876 MHz</coreClock>
+	<memClock>6008 MHz</memClock>
+	<bus>384 bit</bus>
+	<memType>GDDR5</memType>
+	<busType>PCI-E 3.0</busType>
+	<busSpeed></busSpeed>
+	<shader></shader>
+	<digitalReso>4096 X 2160</digitalReso>
+	<vgaReso>2048 x 1536</vgaReso>
+	<power>600W</power>
+	<connect></connect>
+	<manufacturer>GIGABYTE</manufacturer>
+</vga>
+
+
+
+
+
+
+
+<psu tenLK = "CORSAIR HX Series HX750 750W ATX12V 2.3 / EPS12V 2.91 SLI Ready CrossFire Ready 80 PLUS GOLD Certified Modular Active PFC Power Supply">
+	<type>ATX12V 2.3 / EPS12V 2.91</type>
+	<power>750W</power>
+	<pfc>Active</pfc>
+	<connector>20+4Pin</connector>
+	<rail>Single</rail>
+	<input>100 - 240 V</input>
+	<output>+3.3V@25A, +5V@25A, +12V@62A, -12V@0.8A, +5VSB@3A</output>
+	<dimension>5.9"(W) x 3.4"(H) x 7.09"(L)</dimension>
+	<manufacturer>CORSAIR</manufacturer>
+</psu>
+
+<psu tenLK = "Thermaltake SMART Series SP-550PCBUS 550W ATX 12V 2.3 SLI Ready CrossFire Ready 80 PLUS BRONZE Certified Active PFC Power Supply">
+	<type>ATX 12V 2.3</type>
+	<power>550W</power>
+	<pfc>Active</pfc>
+	<connector>24Pin</connector>
+	<rail>Single</rail>
+	<input>100 - 240 V</input>
+	<output>+3.3V@24A, +5V@15A, +12V@42A, -12V@0.5A, +5VSB@3.0A</output>
+	<dimension>5.9" x 3.39" x 5.51"</dimension>
+	<manufacturer>Thermaltake</manufacturer>
+</psu>
+
+<psu tenLK = "Rosewill CAPSTONE Series CAPSTONE-750 750W Continuous @ 50°C, 80 PLUS GOLD Certified, Single +12V Rail, ATX12V v2.31 / EPS12V v2.92, SLI Ready, CrossFire Ready, Active - PFC Power Supply">
+	<type>ATX12V v2.31 & EPS12V v2.92</type>
+	<power>Continuous 750W @ 50°C</power>
+	<pfc>Active</pfc>
+	<connector>20+4Pin</connector>
+	<rail>Single</rail>
+	<input>100 - 240 V</input>
+	<output>+3.3V@24A, +5V@24A, +12V@62A, -12V@0.5A, +5VSB@3A</output>
+	<dimension>5.91" x 3.39" x 6.42" (W x H x D)</dimension>
+	<manufacturer>Rosewill</manufacturer>
+</psu>
+
+<psu tenLK = "RAIDMAX HYBRID 2 RX-530SS 530W ATX12V V2.2/ EPS12V SLI Ready CrossFire Ready Modular Power Supply, New Version with Build-in LED Fan On/Off Switch">
+	<type>ATX12V V2.2/ EPS12V</type>
+	<power>530W</power>
+	<pfc>Active</pfc>
+	<connector>20+4Pin</connector>
+	<rail>2</rail>
+	<input>115 - 230 V</input>
+	<output>+3.3V@28A, +5V@34A, +12V1@20A, +12V2@17A, -12V@0.8A, +5VSB@2.5A</output>
+	<dimension>6.5" x 3.5" x 6"</dimension>
+	<manufacturer>RAIDMAX</manufacturer>
+</psu>
+
+<psu tenLK = "PC Power and Cooling Silencer Mk III Series 850W Modular Power Supply features 100% Nippon Chem-Con Capacitors and Metallic Modular Connector">
+	<type>ATX12V</type>
+	<power>850W</power>
+	<pfc>Active</pfc>
+	<connector>20+4Pin</connector>
+	<rail>Single</rail>
+	<input>100 - 240 V</input>
+	<output>+3.3V@24A, +5V@24A, +12V@70A, -12V@0.5A, +5VSB@3.0A</output>
+	<dimension>5.91" x 3.39" x 7.09"</dimension>
+	<manufacturer>PC Power and Cooling</manufacturer>
+</psu>
+
+
+
+
+
+<keyboard tenLK = "Logitech G710 920-003887 110 Normal Keys USB 2.0 Wired Gaming Plus Mechanical Keyboard">
+	<button>110</button>
+	<connector>USB 2.0</connector>
+	<sub></sub>
+	<size>20" x 8.7" x 1.5"</size>
+	<manufacturer>IOGEAR</manufacturer>
+</keyboard>
+
+<keyboard tenLK = "Cooler Master CM Storm QuickFire Pro Mechanical Gaming Keyboard CherryMX Brown Switch USB">
+	<button></button>
+	<connector>USB 2.0 Full Speed</connector>
+	<sub></sub>
+	<size>17.9(L) x 6.1 (W) x 1.2(H) inch</size>
+	<manufacturer>Cooler Master</manufacturer>
+</keyboard>
+
+<keyboard tenLK = "Microsoft Natural Ergonomic Keyboard 4000">
+	<button>107</button>
+	<connector>USB</connector>
+	<sub></sub>
+	<size></size>
+	<manufacturer>IOGEAR</manufacturer>
+</keyboard>
+
+<keyboard tenLK = "RAZER Blackwidow Ultimate 2013 RZ03-00381900-R3U1 Black USB Wired Elite Mechanical Gaming Keyboard">
+	<button></button>
+	<connector>USB</connector>
+	<sub></sub>
+	<size>18.72" x 6.74" x 0.79"</size>
+	<manufacturer>RAZER</manufacturer>
+</keyboard>
+
+<keyboard tenLK = "SIIG JK-WR0812-S1 Black 102 Normal Keys 10 Function Keys USB RF Wireless Slim Multimedia Keyboard">
+	<button>102</button>
+	<connector>USB</connector>
+	<sub></sub>
+	<size>17 3/8" (L) x 6 5/16" (W) x 13/16" (H) (tilt adjust legs closed)</size>
+	<manufacturer>SIIG</manufacturer>
+</keyboard>
+
+
+
+
+
+
+<audioCard tenLK = "Creative Sound Blaster Audigy SE 7.1 Channels 24-bit 96KHz PCI Interface Sound Card - OEM">
+	<chipset></chipset>
+	<channel>7.1</channel>
+	<rate>96KHz</rate>
+	<encode></encode>
+	<in>Yes</in>
+	<out>Front / Rear / Side / Center / Subwoofer</out>
+	<digital>24-bit</digital>
+	<manufacturer>Creative</manufacturer>
+</audioCard>
+
+<audioCard tenLK = "Vantec UGT-S110 7.1 Channels 48/44.1 KHz PCI Express x1 Interface Sound Card">
+	<chipset></chipset>
+	<channel>7.1</channel>
+	<rate>48/44.1 KHz</rate>
+	<encode>Dolby Digital EX And DTS ES 6.1/7.1 CH DVD</encode>
+	<in>Yes</in>
+	<out>Yes</out>
+	<digital></digital>
+	<manufacturer>Vantec</manufacturer>
+</audioCard>
+
+<audioCard tenLK = "SIIG IC-710012-S2 7.1 Channels 24-bit 96KHz PCI Interface SoundWave">
+	<chipset></chipset>
+	<channel>7.1</channel>
+	<rate>96KHz</rate>
+	<encode>Dolby Digital EX, DTS ES</encode>
+	<in></in>
+	<out></out>
+	<digital>24-bit</digital>
+	<manufacturer>SIIG</manufacturer>
+</audioCard>
+
+<audioCard tenLK = "ASUS Xonar DX 7.1 Channels PCI Express x1 Interface Sound Card">
+	<chipset>ASUS AV100</chipset>
+	<channel>7.1</channel>
+	<rate></rate>
+	<encode>Dolby Digital</encode>
+	<in>Yes</in>
+	<out>Front/Rear/Center/Subwoofer/Rear Center</out>
+	<digital></digital>
+	<manufacturer>ASUS</manufacturer>
+</audioCard>
+
+<audioCard tenLK = "ENCORE ENM232-8VIA 7.1 Channels 24-bit 96KHz PCI Interface Surround Sound Card">
+	<chipset></chipset>
+	<channel>7.1</channel>
+	<rate>96KHz</rate>
+	<encode>Dolby Digital EX and DTS ES 6.1/7.1 CH DVD</encode>
+	<in>Yes</in>
+	<out>Yes</out>
+	<digital>24-bit</digital>
+	<manufacturer>ENCORE</manufacturer>
+</audioCard>
+
+
+
+
+
+
+
+
+<heatsink tenLK = "COOLER MASTER RR-H101-22FK-RA 80mm Long life sleeve bearing CPU Cooler">
+	<compatibility>AMD Socket 939 / 940 / AM2 / AM3</compatibility>
+	<dimension>83.5 x 68 x 117 mm</dimension>
+	<power></power>
+	<material>Pure Copper, Aluminum</material>
+	<fan>80 x 80 x 25 mm</fan>
+	<weight>304g</weight>
+	<life>40,000 hours</life>
+	<manufacturer>COOLER MASTER</manufacturer>
+</heatsink>
+
+<heatsink tenLK = "COOLER MASTER Hyper N 520 RR-920-N520-GP 92mm Sleeve CPU Cooler Compatible with Intel 1366/1155/775 and AMD AM3">
+	<compatibility>Intel Socket LGA1366 / LGA1155 / LGA775 /LGA1150AMD Socket AM3</compatibility>
+	<dimension>115 x 62.3 x 141mm</dimension>
+	<power></power>
+	<material>Aluminum & Copper</material>
+	<fan>92 x 92 x 25mm</fan>
+	<weight>688 g</weight>
+	<life>70,000 hours</life>
+	<manufacturer>COOLER MASTER</manufacturer>
+</heatsink>
+
+<heatsink tenLK = "ARCTIC Freezer 7 Pro Rev. 2, CPU Cooler - Intel & AMD, Multi-Directional Mount, 92mm PWM Fan">
+	<compatibility>Intel CPU LGA 1366 / LGA 1156 / LGA 1155 / LGA 775 AMD CPU Socket AM3 / AM2+ / AM2 / 939 / 754 </compatibility>
+	<dimension>96 x 104 x 127 mm (L x W x H)</dimension>
+	<power></power>
+	<material>Copper Base & Aluminum Fins with Heatpipes embeded</material>
+	<fan>92mm</fan>
+	<weight>465 g</weight>
+	<life></life>
+	<manufacturer>ARCTIC COOLING</manufacturer>
+</heatsink>
+
+<heatsink tenLK = "Enermax ETS-T40-TB CPU Cooler With T.B.SILENCE PWM Twister Bearing Fan Compatible with latest Intel 2011/1366/1155 and AMD FM2/FM1/AM3+">
+	<compatibility>AMD Socket: AM2/AM2+/AM3/AM3+/FM1/FM2; Intel Socket: LGA 775/1155/1156/1366/2011/1150</compatibility>
+	<dimension>139(L) x 70(W) x 160(H)mm</dimension>
+	<power></power>
+	<material>Copper heat pipes, aluminum fins</material>
+	<fan>120 x 120 x 25 mm</fan>
+	<weight>610g</weight>
+	<life></life>
+	<manufacturer>ENERMAX</manufacturer>
+</heatsink>
+
+<heatsink tenLK = "Thermaltake Frio Overclocking-Ready Intel Core i7 (six-core ready) & i5 Compatible Five 8mm Heatpipes Dual 120mm Fans Intel & AMD Universal CPU Cooler CLP0564">
+	<compatibility>Intel: LGA 2011 / 1156 / 1155 / 1366 / 775; AMD: Socket AM2+ / AM2 / AM3</compatibility>
+	<dimension>139 x 98 x 165 mm</dimension>
+	<power></power>
+	<material>Aluminum & Copper</material>
+	<fan>120 x 120 x 25 mm</fan>
+	<weight>1042 g</weight>
+	<life></life>
+	<manufacturer>Thermaltake</manufacturer>
+</heatsink>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<case tenLK = "COOLER MASTER Elite 431 Plus RC-431P-KWN2 Black Steel Body (0.5mm SECC), ABS plastic ATX Mid Tower Computer Case">
+	<color>Black</color>
+	<type>ATX Mid Tower</type>
+	<material>Steel Body (0.5mm SECC), ABS plastic</material>
+	<psuMount>Bottom</psuMount>
+	<sideWindow>Yes</sideWindow>
+	<board>Micro ATX / ATX</board>
+	<external>External 5.25" Drive Bays: 3 ; External 3.5" Drive Bays: 2 </external>
+	<expansion>7 slots</expansion>
+	<front>USB 3.0 x 1 , USB 2.0 x 2, Mic x 1 , Audio x 1</front>
+	<fan>Front: 120mm Blue LED fan x 1, 140mm (optional)
+		Top: 120mm fan x 2 (optional)
+		Rear: 80/90/120 mm fan x 1 (optional)
+		Bottom: 80/90/120mm fan x 1 (optional)
+	</fan>
+	<dimension>7.55" x 16.8" x 19.6"</dimension>
+	<weight>11 lbs.</weight>
+	<manufacturer>COOLER MASTER</manufacturer>
+</case>
+
+<case tenLK = "Corsair Carbide Series 500R Black Steel structure with molded ABS plastic accent pieces ATX Mid Tower Computer Case">
+	<color>Black</color>
+	<type>ATX Mid Tower</type>
+	<material>Steel structure with molded ABS plastic accent pieces</material>
+	<psuMount>Bottom</psuMount>
+	<sideWindow>No</sideWindow>
+	<board>Micro ATX / ATX</board>
+	<external>External 5.25" Drive Bays: 4</external>
+	<expansion>8 slots</expansion>
+	<front>Two USB 3.0 connectors
+		One Firewire connector
+		3.5” headphone and microphone connector</front>
+	<fan>2 x front-mounted 120mm fans
+	1 x rear 120mm fan
+	1 x 200mm side panel fan
+	</fan>
+	<dimension>20.5" x 8.1" x 20"</dimension>
+	<weight>16.6 lbs</weight>
+	<manufacturer>Corsair</manufacturer>
+</case>
+
+<case tenLK = "LIAN LI PC-7HX Black Aluminum ATX Mid Tower Computer Case">
+	<color>Black</color>
+	<type>ATX Mid Tower</type>
+	<material>Aluminum</material>
+	<psuMount></psuMount>
+	<sideWindow></sideWindow>
+	<board>ATX, M-ATX</board>
+	<external>External 5.25" Drive Bays: 3</external>
+	<expansion>8 slots</expansion>
+	<front>USB 3.0 x 2 / HD Audio</front>
+	<fan>120mm Fans : 1
+		140mm Fans: 1
+	</fan>
+	<dimension>8.66" x 20.39" x 19.33"</dimension>
+	<weight></weight>
+	<manufacturer>LIAN LI</manufacturer>
+</case>
+
+<case tenLK = "Thermaltake Element G VL10001W2Z Black Steel / Plastic ATX Mid Tower Computer Case">
+	<color>Black</color>
+	<type>ATX Mid Tower</type>
+	<material>Steel / Plastic</material>
+	<psuMount>Bottom</psuMount>
+	<sideWindow></sideWindow>
+	<board>Mini ATX, Full ATX</board>
+	<external>External 5.25" Drive Bay: 3</external>
+	<expansion>7 slots</expansion>
+	<front>USB 2.0 / Audio</front>
+	<fan> 140mm Fans: 1
+		200mm Fans: 1
+		230mm Fans: 1	
+	</fan>
+	<dimension>20.70" x 9.10" x 22.20"</dimension>
+	<weight></weight>
+	<manufacturer>Thermaltake</manufacturer>
+</case>
+
+<case tenLK = "RAIDMAX SMILODON ATX-612WBP Black 1.0mm SECC Steel ATX Mid Tower Foldout MB Computer Case With 500W Power Supply">
+	<color>Black</color>
+	<type>ATX Mid Tower</type>
+	<material>1.0mm SECC Steel</material>
+	<psuMount>Top</psuMount>
+	<sideWindow>Yes</sideWindow>
+	<board>ATX</board>
+	<external>External 5.25" Drive Bays: 4;
+		External 3.5" Drive Bays: 2
+</external>
+	<expansion>7 slots</expansion>
+	<front>2 x USB2.0, 2 x Audio</front>
+	<fan>1 x 80mm Side Blue LED Fan
+		1 x 80mm Side Cooling Fan
+		1 x 120mm Front Intake Fan
+		1 x 120mm Rear Exhaust Fan
+	</fan>
+	<dimension>20.50" x 8.00" x 17.75"</dimension>
+	<weight></weight>
+	<manufacturer>RAIDMAX</manufacturer>
+</case>
+
+
+
+
+
+
+
+
+
+<speaker tenLK = "Creative GigaWorks T40 Series II 32 watts RMS 2.0 Speakers">
+	<configuration>2.0</configuration>
+	<power>32 watts RMS</power>
+	<frequency>50Hz - 20kHz</frequency>
+	<dimension>3.5" x 5.5" x 12.3"</dimension>
+	<weight>3.3 lbs.</weight>
+	<manufacturer>Creative</manufacturer>
+</speaker>
+
+<speaker tenLK = "Logitech S120 2.3 Watts (RMS) 2.0 Speaker System - OEM">
+	<configuration>2.0</configuration>
+	<power>2.3 Watts (RMS)</power>
+	<frequency>50Hz - 20kHz</frequency>
+	<dimension>156x65x50mm</dimension>
+	<weight></weight>
+	<manufacturer>Logitech</manufacturer>
+</speaker>
+
+<speaker tenLK = "Corsair Gaming Audio Series SP2500 High-power 2.1 PC Speaker System">
+	<configuration>2.1</configuration>
+	<power>232 w</power>
+	<frequency>35Hz – 20kHz +- 3dB</frequency>
+	<dimension>Subwoofer: 18.1" x 10.2" x 11.7"
+		Satellite: 4.25" x 4.7" x 6.25"
+	</dimension>
+	<weight></weight>
+	<manufacturer>Corsair</manufacturer>
+</speaker>
+
+<speaker tenLK = "Eagle Arion ET-AR510LR-BK 2.1 Soundstage Speakers w/Subwoofer & Remote - 5.25" Drivers, 20Hz to 20kHz, 80 Watts">
+	<configuration>2.1</configuration>
+	<power>Total RMS Power: 40 Watts
+		Total Peak Power: 80 Watts
+	</power>
+	<frequency>20Hz - 20KHz</frequency>
+	<dimension>Satellites: 4.33" x 9.65" x 4.77"
+	Subwoofer: 6.7" x 11.03" x 10.25"
+	</dimension>
+	<weight></weight>
+	<manufacturer>Eagle</manufacturer>
+</speaker>
+
+<speaker tenLK = "Genius GX Gaming SW-G2.1 1250 38 Watts RMS 2.1 Speaker System">
+	<configuration>2.1</configuration>
+	<power>38W</power>
+	<frequency>58 Hz ~ 20K Hz</frequency>
+	<dimension>Subwoofer: 9.05" x 8.48" x 9.35"
+		Satellite: 4.41" x 5.51" x 3.89"
+		Controller: 2.36" x 6.69" x 6.06"
+	</dimension>
+	<weight>10.54 lbs</weight>
+	<manufacturer>Genius</manufacturer>
+</speaker>
+
+
+
+
+
+
+

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<linhkien>
+<cpu tenLK="">
+	<series>intel core i3</series>
+	<socket>LGA1366</socket>
+	<manutech>32 nm</manutech>
+	<codename></codename>
+	<core></core>
+	<thread></thread>
+	<speed></speed>
+	<cache></cache>
+	<graphics></graphics>
+	<graphicsFrequen></graphicsFrequen>
+	<mtdp></mtdp>
+	<maxTemp></maxTemp>
+	<64bit></64bit>
+</cpu>
+<mainboard>
+	<socket></socket>
+	<chipset></chipset>
+	<fsb></fsb>
+	<memorySlot></memorySlot>
+	<mms></mms>
+	<memoryBus></memoryBus>
+	<dualChannel></dualChannel>
+	<expansionSlots></expansionSlots>
+	<storageDevices></storageDevices>
+	<ps2></ps2>
+	<hdmi></hdmi>
+	<usb></usb>
+	<audioPort></audioPort>
+	<audioChipset></audioChipset>
+	<dimensions></dimensions>
+	<powerPin></powerPin>
+</mainboard>
+<hdd>
+	<type></type>
+	<series></series>
+	<packaging></packaging>
+	<interface></interface>
+	<capacity></capacity>
+	<rmp></rmp>
+	<cache></cache>
+	<formFactor><formFactor>
+</hdd>
+<ram>
+	<configuration></configuration>
+	<frequency></frequency>
+	<bandwich></bandwich>
+	<capacity></capacity>
+	<type></type>
+	<series></series>
+</ram>
+<vga>
+	<chipset></chipset>
+	<chipsetManu></chipsetManu>
+	<coreClock></coreClock>
+	<memClock></memClock>
+	<bus></bus>
+	<memType></memType>
+	<busType></busType>
+	<busSpeed></busSpeed>
+	<shader></shader>
+	<digitalReso></digitalReso>
+	<vgaReso></vgaReso>
+	<power></power>
+	<connect></connect>
+</vga>
+<psu>
+	<type></type>
+	<power></power>
+	<pfc></pfc>
+	<connector></connector>
+	<rail></rail>
+	<input></input>
+	<output></output>
+	<dimension></dimension>
+</psu>
+<monitor>
+	<tech></tech>
+	<size></size>
+	<ratio></ratio>
+	<brightness></brightness>
+	<contrast></contrast>
+	<responseTime></responseTime>
+	<viewAngle></viewAngle>
+	<color></color>
+	<connectivity></connectivity>
+	<resolution></resolution>
+	<power></power>
+	<dimension></dimension>
+</monitor>
+<coolingLiquid>
+	<contents></contents>
+	<tech></tech>
+	<support></support>
+</coolingLiquid>
+<mouse>
+	<sensor></sensor>
+	<connector></connector>
+	<cable></cable>
+	<size></size>
+</mouse>
+<mousePad>
+	<type></type>
+	<material></material>
+	<size></size>
+</mousePad>
+<keyboard>
+	<button></button>
+	<connector></connector>
+	<sub></sub>
+	<size></size>
+</keyboard>
+<networkCard>
+	<connect></connect>
+	<bus></bus>
+	<oui></oui>
+	<speed></speed>
+	<frequency></frequency>
+	<ssl></ssl>
+</networkCard>
+<audioCard>
+	<chipset></chipset>
+	<channel></channel>
+	<rate></rate>
+	<encode></encode>
+	<in></in>
+	<out></out>
+	<digital></digital>
+</audioCard>
+<heatsink>
+	<compatibility></compatibility>
+	<dimension></dimension>
+	<power></power>
+	<material></material>
+	<fan></fan>
+	<weight></weight>
+	<life></life>
+</heatsink>
+<case>
+	<color></color>
+	<type></type>
+	<material></material>
+	<psuMount></psuMount>
+	<sideWindow></sideWindow>
+	<board></board>
+	<external></external>
+	<expansion></expansion>
+	<front></front>
+	<fan></fan>
+	<dimension></dimension>
+	<weight></weight>
+</case>
+<speaker>
+	<configuration></configuration>
+	<power></power>
+	<frequency></frequency>
+	<dimension></dimension>
+	<weight></weight>
+</speaker>
+</linhkien>
