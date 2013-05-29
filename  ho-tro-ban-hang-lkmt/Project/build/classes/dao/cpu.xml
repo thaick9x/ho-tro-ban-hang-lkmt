@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<linhkien>
+	<cpu maTenLK="1">
+		<series>intel core i3</series>
+		<socket>FCLGA1155</socket>
+		<lithography>22 nm</lithography>
+		<codename>i3-3240T</codename>
+		<core>2</core>
+		<thread>4</thread>
+		<speed>2.9 GHz</speed>
+		<cache>3MB</cache>
+		<graphics>Intel® HD Graphics 2500</graphics>
+		<graphicsFrequen>650 MHz</graphicsFrequen>
+		<mtdp>35 W</mtdp>
+		<maxTemp></maxTemp>
+		<os>64 bit</os>
+		<img>WebContent\linkanh\corei5.jpg</img>
+	</cpu>
+	<cpu maTenLK="2">
+		<series>intel core i3</series>
+		<socket>FCLGA1155</socket>
+		<lithography>22 nm</lithography>
+		<codename>i3-3240</codename>
+		<core>2</core>
+		<thread>4</thread>
+		<speed>3.4 GHz</speed>
+		<cache>3MB</cache>
+		<graphics>Intel HD Graphics 2500</graphics>
+		<graphicsFrequen>650 MHz</graphicsFrequen>
+		<mtdp>55 W</mtdp>
+		<maxTemp></maxTemp>
+		<os>64 bit</os>
+		<img>WebContent\linkanh\corei5.jpg</img>
+	</cpu>
+	<cpu maTenLK="3">
+		<series>intel core i5</series>
+		<socket>FCBGA1023</socket>
+		<lithography>22 nm</lithography>
+		<codename>i5-3439Y</codename>
+		<core>2</core>
+		<thread>4</thread>
+		<speed>1.5 GHz</speed>
+		<cache>3MB</cache>
+		<graphics>Intel HD Graphics 4000</graphics>
+		<graphicsFrequen>350 MHz</graphicsFrequen>
+		<mtdp>13 W</mtdp>
+		<maxTemp></maxTemp>
+		<os>64 bit</os>
+		<img>WebContent\linkanh\corei5.jpg</img>
+	</cpu>
+	<cpu maTenLK="4">
+		<series>intel core i5</series>
+		<socket>FCPGA988</socket>
+		<lithography>22 nm</lithography>
+		<codename>i5-3210M</codename>
+		<core>2</core>
+		<thread>4</thread>
+		<speed>2.5 GHz</speed>
+		<cache>3 MB</cache>
+		<graphics>Intel HD Graphics 4000</graphics>
+		<graphicsFrequen>650 MHz</graphicsFrequen>
+		<mtdp>35 W</mtdp>
+		<maxTemp></maxTemp>
+		<os>64 bit</os>
+		<img>WebContent\linkanh\corei5.jpg</img>
+	</cpu>
+	<cpu maTenLK="5">
+		<series>intel core i7</series>
+		<socket>FCLGA1155</socket>
+		<lithography>22 nm</lithography>
+		<codename>i7-3770K</codename>
+		<core>4</core>
+		<thread>8</thread>
+		<speed>3.5 GHz</speed>
+		<cache>8 MB</cache>
+		<graphics>Intel HD Graphics 4000</graphics>
+		<graphicsFrequen>650 MHz</graphicsFrequen>
+		<mtdp>77 W</mtdp>
+		<maxTemp>67.4 C</maxTemp>
+		<os>64 bit</os>
+		<img>WebContent\linkanh\corei5.jpg</img>
+	</cpu>
+</linhkien>
