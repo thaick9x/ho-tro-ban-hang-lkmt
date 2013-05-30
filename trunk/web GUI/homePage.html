@@ -1,0 +1,367 @@
+﻿
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function() {                        
+        $("[type='sort']").click(function() {     
+            $.post('http://localhost:8080/Project/SortItems', {items:this.name}, function(responseText) { 
+                $('#menu').html(responseText);         
+            });
+        });
+    });
+</script>
+</head>
+<body>
+	
+	
+	
+	
+	
+	
+	<div id="page" align="center">
+		<div id="header" style="width: 960px">
+			<p align="right">
+				<input type="button" name="Đăng nhập" id="Đăng nhập lại"
+					value="Đăng nhập lại" />
+			</p>
+			<p align="right">
+				<a href="#">Giỏ hàng</a>
+			</p>
+			<p>
+				<label for="textfield"> </label>
+			<div align="right" style="width: 960px">
+				Nhập tên sản phẩm cần tìm <input type="text" name="textfield"
+					id="textfield" /> <input type="submit" name="Search"
+					id="button-search" value="Search" />
+			</div>
+		</div>
+		<div id="content" style="margin-bottom: 0; width: 960px;">
+			<div id="menu" style="heigh: auto; width: 860px; float: right;">
+				<div id="hotItems" style="heigh: auto; width: 860px;">
+					<h2>Linh kiện hot</h2>
+					
+					<div id="linhKien" style="height: 215px; width: 215px; float: left">
+						<img src=WebContent\linkanh\corei5.jpg height="42" width="42" />
+						<p>Intel Core i3-3240T</p>
+						<p>
+							Giá:
+							3000000</p>
+						
+					</div>
+					
+					<div id="linhKien" style="height: 215px; width: 215px; float: left">
+						<img src=WebContent\linkanh\9.jpg height="42" width="42" />
+						<p>G.SKILL 4GB 204-Pin DDR3 SO-DIMM DDR3 1600 (PC3 12800) Laptop Memory Model F3-12800CL11S-4GBSQ</p>
+						<p>
+							Giá:
+							750000</p>
+						
+					</div>
+					
+					<div id="linhKien" style="height: 215px; width: 215px; float: left">
+						<img src=WebContent\linkanh\8.jpg height="42" width="42" />
+						<p>Kingston 4GB 240-Pin DDR3 SDRAM DDR3 1333 (PC3 10600) Desktop Memory Model KVR1333D3N9/4G</p>
+						<p>
+							Giá:
+							800000</p>
+						
+					</div>
+					
+					<div id="linhKien" style="height: 215px; width: 215px; float: left">
+						<img src=WebContent\linkanh\7.jpg height="42" width="42" />
+						<p>Mushkin Enhanced Essentials 8GB 204-Pin DDR3 SO-DIMM DDR3 1333 (PC3 10600) Laptop Memory Model 992020</p>
+						<p>
+							Giá:
+							1500000</p>
+						
+					</div>
+					
+					<div id="linhKien" style="height: 215px; width: 215px; float: left">
+						<img src=\WebContent\linkanh\6.jpg height="42" width="42" />
+						<p>CORSAIR 1GB 200-Pin DDR2 SO-DIMM DDR2 667 (PC2 5300) Laptop Memory Model VS1GSDS667D2</p>
+						<p>
+							Giá:
+							400000</p>
+						
+					</div>
+					
+					<div id="linhKien" style="height: 215px; width: 215px; float: left">
+						<img src=WebContent\linkanh\corei5.jpg height="42" width="42" />
+						<p>Intel® Core™ i7-3770K Processor</p>
+						<p>
+							Giá:
+							7200000</p>
+						
+					</div>
+					
+					<div id="linhKien" style="height: 215px; width: 215px; float: left">
+						<img src=WebContent\linkanh\corei5.jpg height="42" width="42" />
+						<p>Intel® Core i5-3210M Processor rPGA</p>
+						<p>
+							Giá:
+							5700000</p>
+						
+					</div>
+					
+					<div id="linhKien" style="height: 215px; width: 215px; float: left">
+						<img src=WebContent\linkanh\corei5.jpg height="42" width="42" />
+						<p>Intel Core i5-3439Y Processor</p>
+						<p>
+							Giá:
+							5200000</p>
+						
+					</div>
+					
+					<div id="linhKien" style="height: 215px; width: 215px; float: left">
+						<img src=WebContent\linkanh\corei5.jpg height="42" width="42" />
+						<p>Intel Core i3-3240</p>
+						<p>
+							Giá:
+							2800000</p>
+						
+					</div>
+					
+					<div id="linhKien" style="height: 215px; width: 215px; float: left">
+						<img src=WebContent\linkanh\10.jpg height="42" width="42" />
+						<p>ADATA 8GB 204-Pin DDR3 SO-DIMM DDR3 1333 (PC3 10600) Laptop Memory Model AD3S1333W8G9-S</p>
+						<p>
+							Giá:
+							2500000</p>
+						
+					</div>
+					
+				</div>
+				<div id="newItems" style="heigh: auto; width: 860px; float: right;">
+					<h2>Linh kiện mới</h2>
+					
+					<div id="linhKien" style="height: 215px; width: 215px; float: left">
+						<img src=WebContent\linkanh\corei5.jpg height="42" width="42" />
+						<p>Intel Core i3-3240T</p>
+						<p>
+							Giá:
+							3000000</p>
+						
+					</div>
+					
+					<div id="linhKien" style="height: 215px; width: 215px; float: left">
+						<img src=WebContent\linkanh\7.jpg height="42" width="42" />
+						<p>Mushkin Enhanced Essentials 8GB 204-Pin DDR3 SO-DIMM DDR3 1333 (PC3 10600) Laptop Memory Model 992020</p>
+						<p>
+							Giá:
+							1500000</p>
+						
+					</div>
+					
+					<div id="linhKien" style="height: 215px; width: 215px; float: left">
+						<img src=WebContent\linkanh\corei5.jpg height="42" width="42" />
+						<p>Intel Core i3-3240</p>
+						<p>
+							Giá:
+							2800000</p>
+						
+					</div>
+					
+					<div id="linhKien" style="height: 215px; width: 215px; float: left">
+						<img src=WebContent\linkanh\8.jpg height="42" width="42" />
+						<p>Kingston 4GB 240-Pin DDR3 SDRAM DDR3 1333 (PC3 10600) Desktop Memory Model KVR1333D3N9/4G</p>
+						<p>
+							Giá:
+							800000</p>
+						
+					</div>
+					
+					<div id="linhKien" style="height: 215px; width: 215px; float: left">
+						<img src=WebContent\linkanh\corei5.jpg height="42" width="42" />
+						<p>Intel Core i5-3439Y Processor</p>
+						<p>
+							Giá:
+							5200000</p>
+						
+					</div>
+					
+					<div id="linhKien" style="height: 215px; width: 215px; float: left">
+						<img src=WebContent\linkanh\9.jpg height="42" width="42" />
+						<p>G.SKILL 4GB 204-Pin DDR3 SO-DIMM DDR3 1600 (PC3 12800) Laptop Memory Model F3-12800CL11S-4GBSQ</p>
+						<p>
+							Giá:
+							750000</p>
+						
+					</div>
+					
+					<div id="linhKien" style="height: 215px; width: 215px; float: left">
+						<img src=WebContent\linkanh\corei5.jpg height="42" width="42" />
+						<p>Intel® Core i5-3210M Processor rPGA</p>
+						<p>
+							Giá:
+							5700000</p>
+						
+					</div>
+					
+					<div id="linhKien" style="height: 215px; width: 215px; float: left">
+						<img src=WebContent\linkanh\10.jpg height="42" width="42" />
+						<p>ADATA 8GB 204-Pin DDR3 SO-DIMM DDR3 1333 (PC3 10600) Laptop Memory Model AD3S1333W8G9-S</p>
+						<p>
+							Giá:
+							2500000</p>
+						
+					</div>
+					
+					<div id="linhKien" style="height: 215px; width: 215px; float: left">
+						<img src=WebContent\linkanh\corei5.jpg height="42" width="42" />
+						<p>Intel® Core™ i7-3770K Processor</p>
+						<p>
+							Giá:
+							7200000</p>
+						
+					</div>
+					
+					<div id="linhKien" style="height: 215px; width: 215px; float: left">
+						<img src=\WebContent\linkanh\6.jpg height="42" width="42" />
+						<p>CORSAIR 1GB 200-Pin DDR2 SO-DIMM DDR2 667 (PC2 5300) Laptop Memory Model VS1GSDS667D2</p>
+						<p>
+							Giá:
+							400000</p>
+						
+					</div>
+					
+				</div>
+				<form name="form1" method="post" action="">
+					<input type="button" name="button-cart" id="button-cart"
+						value="Thêm vào giỏ">
+				</form>
+
+			</div>
+			<div style="heigh: auto; width: 100px; float: left">
+				
+				<div>
+					<p align="center">AUDIO CARD</p>
+					<div>
+						
+					</div>
+				</div>
+				
+				<div>
+					<p align="center">CASE</p>
+					<div>
+						
+					</div>
+				</div>
+				
+				<div>
+					<p align="center">COOLING LI</p>
+					<div>
+						
+					</div>
+				</div>
+				
+				<div>
+					<p align="center">CPU</p>
+					<div>
+						
+						<a type="sort" href="#" name=intel-cpu style="color: red">INTEL</a>
+						
+					</div>
+				</div>
+				
+				<div>
+					<p align="center">HDD</p>
+					<div>
+						
+					</div>
+				</div>
+				
+				<div>
+					<p align="center">HEAT SINK</p>
+					<div>
+						
+					</div>
+				</div>
+				
+				<div>
+					<p align="center">KEYBOARD</p>
+					<div>
+						
+					</div>
+				</div>
+				
+				<div>
+					<p align="center">MAINBOARD</p>
+					<div>
+						
+					</div>
+				</div>
+				
+				<div>
+					<p align="center">MONITOR</p>
+					<div>
+						
+					</div>
+				</div>
+				
+				<div>
+					<p align="center">MOUSE</p>
+					<div>
+						
+					</div>
+				</div>
+				
+				<div>
+					<p align="center">MOUSE PAD</p>
+					<div>
+						
+					</div>
+				</div>
+				
+				<div>
+					<p align="center">NETWORK CA</p>
+					<div>
+						
+					</div>
+				</div>
+				
+				<div>
+					<p align="center">PSU</p>
+					<div>
+						
+					</div>
+				</div>
+				
+				<div>
+					<p align="center">RAM</p>
+					<div>
+						
+						<a type="sort" href="#" name=corsair-ram style="color: red">CORSAIR</a>
+						
+						<a type="sort" href="#" name=mushkin-ram style="color: red">MUSHKIN</a>
+						
+						<a type="sort" href="#" name=kingston-ram style="color: red">KINGSTON</a>
+						
+						<a type="sort" href="#" name=gskill-ram style="color: red">GSKILL</a>
+						
+						<a type="sort" href="#" name=adata-ram style="color: red">ADATA</a>
+						
+					</div>
+				</div>
+				
+				<div>
+					<p align="center">SPEAKER</p>
+					<div>
+						
+					</div>
+				</div>
+				
+				<div>
+					<p align="center">VGA</p>
+					<div>
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
