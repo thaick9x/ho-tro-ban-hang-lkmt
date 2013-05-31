@@ -95,7 +95,7 @@ ENGINE = InnoDB;
 CREATE  TABLE IF NOT EXISTS `mydb`.`Thong_Tin_Nhap_Kho` (
   `Ma_NK` INT NOT NULL AUTO_INCREMENT ,
   `Ma_NV` INT NOT NULL ,
-  `Ngay_nhap` date NOT NULL ,
+  `Ngay_nhap` DATE NOT NULL ,
   `Chi_Phi_Nhap` DECIMAL(10) NOT NULL ,
   PRIMARY KEY (`Ma_NK`) ,
   INDEX `fk_Thong_Tin_Nhap_Kho_Thong_Tin_Nhan_Vien1_idx` (`Ma_NV` ASC) ,
@@ -158,41 +158,6 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Chi_Tiet_HD`
--- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `mydb`.`Chi_Tiet_HD` (
-  `MaCTGD` INT NOT NULL AUTO_INCREMENT ,
-  `Ma_LK` INT NOT NULL ,
-  `Ma_HD` INT NOT NULL ,
-  `Gia_GD` DECIMAL(9) NOT NULL ,
-  PRIMARY KEY (`MaCTGD`) ,
-  CONSTRAINT `fk_ChiTietHD_ChiTietLinhKien1`
-    FOREIGN KEY (`Ma_LK` )
-    REFERENCES `mydb`.`Chi_Tiet_Linh_Kien` (`Ma_LK` )
-    ON DELETE NO ACTION
-    ON UPDATE CASCADE)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `mydb`.`Thong_Tin_GD`
--- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `mydb`.`Thong_Tin_GD` (
-  `Ma_HD` INT NOT NULL AUTO_INCREMENT ,
-  `Ngay_GD` DATE NOT NULL ,
-  `Don_Gia` DECIMAL(10) NOT NULL ,
-  `Ma_NV` VARCHAR(10) NOT NULL ,
-  `Ma_KH` VARCHAR(10) NOT NULL ,
-  PRIMARY KEY (`Ma_HD`) ,
-  CONSTRAINT `fk_ThongTinGD_ChiTietGD1`
-    FOREIGN KEY (`Ma_HD` )
-    REFERENCES `mydb`.`Chi_Tiet_HD` (`Ma_LK` )
-    ON DELETE NO ACTION
-    ON UPDATE CASCADE)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `mydb`.`Thong_Tin_Khach_Hang`
 -- -----------------------------------------------------
 CREATE  TABLE IF NOT EXISTS `mydb`.`Thong_Tin_Khach_Hang` (
@@ -214,12 +179,107 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
+-- Table `mydb`.`Thong_tin_gio_hang`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `mydb`.`Thong_tin_gio_hang` (
+  `ma_gio` INT NOT NULL AUTO_INCREMENT ,
+  `ma_KH` INT NOT NULL ,
+  PRIMARY KEY (`ma_gio`) ,
+  INDEX `fk_Thong_tin_gio_hang_Thong_Tin_Khach_Hang1_idx` (`ma_KH` ASC) ,
+  CONSTRAINT `fk_Thong_tin_gio_hang_Thong_Tin_Khach_Hang1`
+    FOREIGN KEY (`ma_KH` )
+    REFERENCES `mydb`.`Thong_Tin_Khach_Hang` (`Ma_KH` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`Thong_Tin_HD`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `mydb`.`Thong_Tin_HD` (
+  `ma_HD` INT NOT NULL ,
+  `Ngay_lap_HD` DATE NOT NULL ,
+  `Don_Gia` DECIMAL(10) NOT NULL ,
+  `Ma_NV` INT NOT NULL ,
+  `Ma_KH` INT NOT NULL ,
+  `Ma_GIo` INT NOT NULL ,
+  INDEX `fk_Thong_Tin_HD_Thong_Tin_Nhan_Vien1_idx` (`Ma_NV` ASC) ,
+  INDEX `fk_Thong_Tin_HD_Thong_Tin_Khach_Hang1_idx` (`Ma_KH` ASC) ,
+  PRIMARY KEY (`ma_HD`) ,
+  INDEX `fk_Thong_Tin_HD_Thong_tin_gio_hang1_idx` (`Ma_GIo` ASC) ,
+  CONSTRAINT `fk_Thong_Tin_HD_Thong_Tin_Nhan_Vien1`
+    FOREIGN KEY (`Ma_NV` )
+    REFERENCES `mydb`.`Thong_Tin_Nhan_Vien` (`Ma_NV` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Thong_Tin_HD_Thong_Tin_Khach_Hang1`
+    FOREIGN KEY (`Ma_KH` )
+    REFERENCES `mydb`.`Thong_Tin_Khach_Hang` (`Ma_KH` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Thong_Tin_HD_Thong_tin_gio_hang1`
+    FOREIGN KEY (`Ma_GIo` )
+    REFERENCES `mydb`.`Thong_tin_gio_hang` (`ma_gio` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`Chi_Tiet_HD`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `mydb`.`Chi_Tiet_HD` (
+  `MaCTHD` INT NOT NULL AUTO_INCREMENT ,
+  `Ma_LK` INT NOT NULL ,
+  `Ma_HD` INT NOT NULL ,
+  `Gia_trong_HD` DECIMAL(9) NOT NULL ,
+  PRIMARY KEY (`MaCTHD`) ,
+  INDEX `fk_Chi_Tiet_HD_Thong_Tin_HD1_idx` (`Ma_HD` ASC) ,
+  CONSTRAINT `fk_ChiTietHD_ChiTietLinhKien1`
+    FOREIGN KEY (`Ma_LK` )
+    REFERENCES `mydb`.`Chi_Tiet_Linh_Kien` (`Ma_LK` )
+    ON DELETE NO ACTION
+    ON UPDATE CASCADE,
+  CONSTRAINT `fk_Chi_Tiet_HD_Thong_Tin_HD1`
+    FOREIGN KEY (`Ma_HD` )
+    REFERENCES `mydb`.`Thong_Tin_HD` (`ma_HD` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
 -- Table `mydb`.`Quyen`
 -- -----------------------------------------------------
 CREATE  TABLE IF NOT EXISTS `mydb`.`Quyen` (
   `Ma_Quyen` INT NOT NULL ,
   `Ten_Quyen` VARCHAR(20) NOT NULL ,
   PRIMARY KEY (`Ma_Quyen`) )
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`chi_tiet_gio_hang`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `mydb`.`chi_tiet_gio_hang` (
+  `ma_ctgh` INT NOT NULL AUTO_INCREMENT ,
+  `ma_gio` INT NOT NULL ,
+  `ma_ten_lk` INT NOT NULL ,
+  `so_luong_dat` INT NOT NULL ,
+  PRIMARY KEY (`ma_ctgh`) ,
+  INDEX `fk_chi_tiet_gio_hang_Thong_tin_gio_hang1_idx` (`ma_gio` ASC) ,
+  INDEX `fk_chi_tiet_gio_hang_Thong_Tin_LK1_idx` (`ma_ten_lk` ASC) ,
+  CONSTRAINT `fk_chi_tiet_gio_hang_Thong_tin_gio_hang1`
+    FOREIGN KEY (`ma_gio` )
+    REFERENCES `mydb`.`Thong_tin_gio_hang` (`ma_gio` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_chi_tiet_gio_hang_Thong_Tin_LK1`
+    FOREIGN KEY (`ma_ten_lk` )
+    REFERENCES `mydb`.`Thong_Tin_LK` (`Ma_Ten_LK` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 USE `mydb` ;
