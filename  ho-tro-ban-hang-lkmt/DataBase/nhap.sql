@@ -1,5 +1,15 @@
 ﻿use mydb;
 -- -----------------------------------------------------
+-- Trigger
+-- -----------------------------------------------------
+DELIMITER $$
+create trigger au_chi_tiet_gh after insert on chi_tiet_gio_hang
+for each row
+begin
+	update thong_tin_lk set thong_tin_lk.so_luong = thong_tin_lk.so_luong - (new.so_luong_dat) where new.ma_ten_lk = thong_tin_lk.ma_ten_lk;
+end$$
+DELIMITER ;
+-- -----------------------------------------------------
 -- Thêm vào thông tin đăng nhập
 -- -----------------------------------------------------
 insert into nhom values ('nvgd', 0),  
@@ -22,7 +32,7 @@ insert into thong_tin_nhan_vien (ten_nv, dia_chi_nv, CMND_nv, ngay_vao_lam, ngay
 -- Thêm vào loại lk
 -- -----------------------------------------------------
 insert into loai_lk values
-('cpu', 'd:\cpu.xml');
+('cpu', 'cpu.xml');
 
 insert into loai_lk values
 ('mainboard', '');
@@ -31,7 +41,7 @@ insert into loai_lk values
 ('hdd', '');
 
 insert into loai_lk values
-('ram', 'd:\ram.xml');
+('ram', 'ram.xml');
 
 insert into loai_lk values
 ('vga', '');
@@ -103,5 +113,11 @@ insert into chi_tiet_nhap_kho (ma_nk, ma_ten_lk, so_luong, gia_nhap) values
 (2, 9, 5, 500000),
 (2, 10, 5, 2000000);  
  
+insert into chi_tiet_linh_kien (ma_ten_lk, trang_thai, imei, ma_ctnk) values
+(1, 'avail', '213141', '1'),
+(1, 'avail', '313141', '1'),
+(1, 'avail', '413141', '1'),
+(1, 'avail', '513141', '1'),
+(1, 'avail', '613141', '1')
 
 
