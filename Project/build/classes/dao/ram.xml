@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<linhkien>
+	<ram maTenLK="6">
+		<configuration></configuration>
+		<frequency>PC2 5300</frequency>
+		<bandwich>667</bandwich>
+		<capacity>1GB</capacity>
+		<type>200-Pin DDR2 SO-DIMM</type>
+		<series></series>
+		<manufacturer>CORSAIR</manufacturer>
+		<img>.\linkanh\6.jpg</img>
+	</ram>
+	<ram maTenLK="7">
+		<configuration></configuration>
+		<frequency>PC3 10600</frequency>
+		<bandwich>1333</bandwich>
+		<capacity>8GB</capacity>
+		<type>204-Pin DDR3 SO-DIMM</type>
+		<series>Essentials</series>
+		<manufacturer>Mushkin Enhanced</manufacturer>
+		<img>.\linkanh\7.jpg</img>
+	</ram>
+	<ram maTenLK="8">
+		<configuration></configuration>
+		<frequency>PC3 10600</frequency>
+		<bandwich>1333</bandwich>
+		<capacity>4GB</capacity>
+		<type>240-Pin DDR3 SDRAM</type>
+		<series></series>
+		<manufacturer>Kingston</manufacturer>
+		<img>.\linkanh\8.jpg</img>
+	</ram>
+	<ram maTenLK="9">
+		<configuration></configuration>
+		<frequency>PC3 12800</frequency>
+		<bandwich>1600MHz</bandwich>
+		<capacity>4GB</capacity>
+		<type>204-Pin DDR3 SO-DIMM</type>
+		<series></series>
+		<manufacturer>G.SKILL</manufacturer>
+		<img>.\linkanh\9.jpg</img>
+	</ram>
+	<ram maTenLK="10">
+		<configuration></configuration>
+		<frequency>PC3 10600</frequency>
+		<bandwich>1333</bandwich>
+		<capacity>8GB</capacity>
+		<type>204-Pin DDR3 SO-DIMM</type>
+		<series></series>
+		<manufacturer>ADATA</manufacturer>
+		<img>.\linkanh\10.jpg</img>
+	</ram>
+</linhkien>
