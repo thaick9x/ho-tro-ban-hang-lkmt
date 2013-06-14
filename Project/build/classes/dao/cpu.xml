@@ -14,7 +14,7 @@
 		<mtdp>35 W</mtdp>
 		<maxTemp></maxTemp>
 		<os>64 bit</os>
-		<img>.\linkanh\corei5.jpg</img>
+		<img>linkanh/corei5.jpg</img>
 	</cpu>
 	<cpu maTenLK="2">
 		<series>intel core i3</series>
@@ -30,7 +30,7 @@
 		<mtdp>55 W</mtdp>
 		<maxTemp></maxTemp>
 		<os>64 bit</os>
-		<img>.\linkanh\corei5.jpg</img>
+		<img>linkanh/corei5.jpg</img>
 	</cpu>
 	<cpu maTenLK="3">
 		<series>intel core i5</series>
@@ -46,7 +46,7 @@
 		<mtdp>13 W</mtdp>
 		<maxTemp></maxTemp>
 		<os>64 bit</os>
-		<img>.\linkanh\corei5.jpg</img>
+		<img>linkanh/corei5.jpg</img>
 	</cpu>
 	<cpu maTenLK="4">
 		<series>intel core i5</series>
@@ -62,7 +62,7 @@
 		<mtdp>35 W</mtdp>
 		<maxTemp></maxTemp>
 		<os>64 bit</os>
-		<img>.\linkanh\corei5.jpg</img>
+		<img>linkanh/corei5.jpg</img>
 	</cpu>
 	<cpu maTenLK="5">
 		<series>intel core i7</series>
@@ -78,6 +78,6 @@
 		<mtdp>77 W</mtdp>
 		<maxTemp>67.4 C</maxTemp>
 		<os>64 bit</os>
-		<img>.\linkanh\corei5.jpg</img>
+		<img>linkanh/corei5.jpg</img>
 	</cpu>
 </linhkien>

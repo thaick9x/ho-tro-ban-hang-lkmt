@@ -7,10 +7,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import misc.Cart;
 
 /**
  * Servlet implementation class ConfirmCart
+ * Xác nhận số lượng và linh kiện của giỏ hàng
  */
 @WebServlet("/ConfirmCart")
 public class ConfirmCart extends HttpServlet {
@@ -39,7 +39,7 @@ public class ConfirmCart extends HttpServlet {
 		String amount = request.getParameter("amount");
 		response.setContentType("text");
 		try {
-			response.getWriter().write(Cart.getTotalPrice(id, amount));
+			response.getWriter().write(BusGioHang.getTotalPrice(id, amount));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

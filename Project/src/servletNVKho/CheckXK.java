@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import com.google.gson.Gson;
-import dao.DAOXK;
+import dao.DaoXK;
 
 /**
  * Servlet implementation class CheckXK
@@ -42,7 +42,7 @@ public class CheckXK extends HttpServlet {
 		String maGio = request.getParameter("maGio");
 		String maTenLK = request.getParameter("maTenLK");
 		response.setContentType("text");
-		DAOXK dao = new DAOXK();
+		DaoXK dao = new DaoXK();
 		try {
 			LinkedList<String> kq = dao.setInfoXK(maGio, idRow, maLK, maTenLK);
 			if (kq.size() == 0) {

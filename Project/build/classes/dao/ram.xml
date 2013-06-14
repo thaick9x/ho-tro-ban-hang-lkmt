@@ -8,7 +8,7 @@
 		<type>200-Pin DDR2 SO-DIMM</type>
 		<series></series>
 		<manufacturer>CORSAIR</manufacturer>
-		<img>.\linkanh\6.jpg</img>
+		<img>linkanh/6.jpg</img>
 	</ram>
 	<ram maTenLK="7">
 		<configuration></configuration>
@@ -18,7 +18,7 @@
 		<type>204-Pin DDR3 SO-DIMM</type>
 		<series>Essentials</series>
 		<manufacturer>Mushkin Enhanced</manufacturer>
-		<img>.\linkanh\7.jpg</img>
+		<img>linkanh/7.jpg</img>
 	</ram>
 	<ram maTenLK="8">
 		<configuration></configuration>
@@ -28,7 +28,7 @@
 		<type>240-Pin DDR3 SDRAM</type>
 		<series></series>
 		<manufacturer>Kingston</manufacturer>
-		<img>.\linkanh\8.jpg</img>
+		<img>linkanh/8.jpg</img>
 	</ram>
 	<ram maTenLK="9">
 		<configuration></configuration>
@@ -38,7 +38,7 @@
 		<type>204-Pin DDR3 SO-DIMM</type>
 		<series></series>
 		<manufacturer>G.SKILL</manufacturer>
-		<img>.\linkanh\9.jpg</img>
+		<img>linkanh/9.jpg</img>
 	</ram>
 	<ram maTenLK="10">
 		<configuration></configuration>
@@ -48,6 +48,6 @@
 		<type>204-Pin DDR3 SO-DIMM</type>
 		<series></series>
 		<manufacturer>ADATA</manufacturer>
-		<img>.\linkanh\10.jpg</img>
+		<img>linkanh/10.jpg</img>
 	</ram>
 </linhkien>
