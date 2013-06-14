@@ -12,7 +12,6 @@ import com.google.gson.*;
 import dto.ItemsInCart;
 
 
-import misc.Cart;
 
 /**
  * Servlet implementation class ShowCartItems
@@ -44,7 +43,7 @@ public class ShowCartItems extends HttpServlet {
 		String items = request.getParameter("cart");
 		ItemsInCart cart = new ItemsInCart();
 		try {
-			cart = Cart.getItemsInCart(items);
+			cart = BusGioHang.getItemsInCart(items);
 		} catch (JsonSyntaxException e) {
 			e.printStackTrace();
 		} catch (Exception e) {

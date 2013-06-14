@@ -2,6 +2,11 @@ package bean;
 
 import java.util.LinkedList;
 
+/*
+ * Hiện thông tin cơ bản của các linh kiện cho trang chủ
+ * Dùng cho Home.jsp
+ */
+
 public class HomeMenuBean {
 	private LinkedList<String> tenLK;
 	private LinkedList<Integer> soLuongLK;

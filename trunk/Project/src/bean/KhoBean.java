@@ -4,6 +4,11 @@ import java.util.LinkedList;
 
 import dto.CartInfo;
 
+/*
+ * Class chứa các thông tin giỏ hàng cho nhân viên kho sử dụng
+ * Dùng cho NVKho.jsp
+ */
+
 public class KhoBean {
 	private LinkedList<CartInfo> cart;
 	

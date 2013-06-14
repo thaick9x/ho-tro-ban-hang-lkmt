@@ -7,10 +7,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import com.google.gson.*;
-import dao.DAOInfo;
+import dao.DaoTTLK;
 import dto.ItemsInfo;
 /**
  * Servlet implementation class GetInfoLK
+ * Xuất thông tin kỹ thuật của từng linh kiện
  */
 @WebServlet("/GetInfoLK")
 public class GetInfoLK extends HttpServlet {
@@ -36,10 +37,10 @@ public class GetInfoLK extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String maTenLK = request.getParameter("serial");
-		DAOInfo dao = new DAOInfo();
+		DaoTTLK dao = new DaoTTLK();
 		ItemsInfo info = new ItemsInfo();
 		Gson json = new Gson();
-		response.setContentType("text/plain");
+		response.setContentType("text");
 		response.setCharacterEncoding("UTF-8");
 		try {
 			info = dao.getInfo(maTenLK);

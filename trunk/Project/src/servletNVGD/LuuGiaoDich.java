@@ -33,7 +33,7 @@ public class LuuGiaoDich extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		GiaoDich gd = new GiaoDich();
+		BusGiaoDich gd = new BusGiaoDich();
 		String maNV = request.getParameter("maNV");
 		String maGio = request.getParameter("maGio");
 		try {

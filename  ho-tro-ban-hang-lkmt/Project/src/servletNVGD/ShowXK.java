@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
 
-import dao.DAOXK;
+import dao.DaoXK;
 
 /**
  * Servlet implementation class ShowXK
@@ -38,7 +38,7 @@ public class ShowXK extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String maGio = request.getParameter("maGio");
-		DAOXK dao = new DAOXK();
+		DaoXK dao = new DaoXK();
 		Gson json = new Gson();
 		response.setContentType("text/plain");
 		try {

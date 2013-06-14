@@ -9,10 +9,13 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import dao.DAOCart;
+
+import bean.ThongTinNV;
+import dao.DaoGioHang;
 
 /**
  * Servlet implementation class NVKho
+ * Hiện trang dành cho nhân viên kho sử dụng
  */
 @WebServlet("/NVKho")
 public class NVKho extends HttpServlet {
@@ -30,17 +33,24 @@ public class NVKho extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		DAOCart dao = new DAOCart();	
-		try {
-			LinkedList<String> id = dao.getExportCart();
-			request.setAttribute("cart", dao.getCartInfoKho(id));
-			RequestDispatcher rd = request.getRequestDispatcher("Kho.jsp");
-			rd.forward(request, response);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		ThongTinNV infoNV = (ThongTinNV)(request.getSession().getAttribute("infoNVK"));
+		if (infoNV == null) {
+			response.sendRedirect("Login.html");
 		}
-		
+		else {
+			DaoGioHang dao = new DaoGioHang();	
+			try {
+				LinkedList<String> id = dao.getExportCart();
+				request.setAttribute("infoNVK", infoNV);
+				request.setAttribute("cart", dao.getCartInfoKho(id));
+				RequestDispatcher rd = request.getRequestDispatcher("Kho.jsp");
+				rd.forward(request, response);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
 	}
 
 	/**

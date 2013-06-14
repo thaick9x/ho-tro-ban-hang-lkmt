@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import com.google.gson.*;
-import dao.DAOCart;
+import dao.DaoGioHang;
 
 /**
  * Servlet implementation class ShowCartInfo
@@ -36,9 +36,9 @@ public class ShowCartInfo extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String maGio = request.getParameter("maGio");
-		DAOCart dao = new DAOCart();
+		DaoGioHang dao = new DaoGioHang();
 		Gson json = new Gson();
-		response.setContentType("text/plain");
+		response.setContentType("text/html; charset=UTF-8");
 		try {
 			response.getWriter().print(json.toJson(dao.getCartInfoGD(maGio)));
 		} catch (Exception ex) {

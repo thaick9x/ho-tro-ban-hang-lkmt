@@ -6,10 +6,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import dao.DAOCart;
+import dao.DaoGioHang;
 import com.google.gson.*;
 /**
  * Servlet implementation class RefreshListCart
+ * Lấy các mã giỏ đã được nhận từ khách hàng
  */
 @WebServlet("/RefreshListCart")
 public class RefreshListCart extends HttpServlet {
@@ -35,7 +36,7 @@ public class RefreshListCart extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/plain");
-		DAOCart cart = new DAOCart();
+		DaoGioHang cart = new DaoGioHang();
 		try {
 			response.getWriter().print(new Gson().toJson(cart.getListCart()));
 		} catch (Exception e) {

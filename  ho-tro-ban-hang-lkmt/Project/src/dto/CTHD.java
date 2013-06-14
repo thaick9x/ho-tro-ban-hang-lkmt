@@ -3,7 +3,7 @@ package dto;
 import java.sql.SQLException;
 import java.util.LinkedList;
 
-import dao.DAOInfo;
+import dao.DaoTTLK;
 
 public class CTHD {
 	private LinkedList<String> maLK;
@@ -20,7 +20,7 @@ public class CTHD {
 		super();
 		this.maLK = maLK;
 		this.maHD = maHD;
-		this.price = new DAOInfo().getPrices(maLK);
+		this.price = new DaoTTLK().getPrices(maLK);
 	}
 
 	public LinkedList<Long> getPrice() {

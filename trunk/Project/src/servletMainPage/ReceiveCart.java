@@ -7,7 +7,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import com.google.gson.*;
-import misc.Cart;
 
 /**
  * Servlet implementation class ReceiveCart
@@ -40,10 +39,10 @@ public class ReceiveCart extends HttpServlet {
 		String amount = request.getParameter("amount");
 		response.setContentType("text/plain");
 		try {
-			if (Cart.receiveCart(info, id, amount).size() == 0) {
+			if (BusGioHang.receiveCart(info, id, amount).size() == 0) {
 				response.getWriter().write("success");
 			} else {
-				response.getWriter().write(new Gson().toJson(Cart.receiveCart(info, id, amount)));
+				response.getWriter().write(new Gson().toJson(BusGioHang.receiveCart(info, id, amount)));
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

@@ -3,10 +3,10 @@ package dao;
 import java.sql.*;
 import java.util.LinkedList;
 
-import bean.Manufactor;
-import bean.ManufactorBean;
+import bean.NsxLoaiLK;
+import bean.NsxLoaiLKBean;
 
-public class DAOMenuLK extends DAO {
+public class DaoMenuLK extends DAO {
 	private PreparedStatement statement;
 	private String sqlStatement;
 	
@@ -23,9 +23,9 @@ public class DAOMenuLK extends DAO {
 	}
 	
 	// Hàm lấy ra danh sách các nhà sản xuất theo loại linh kiện
-	public ManufactorBean getManufactor() throws Exception {
+	public NsxLoaiLKBean getManufactor() throws Exception {
 		LinkedList<String> loaiLK = getListLoaiLK();
-		ManufactorBean bean = new ManufactorBean();
+		NsxLoaiLKBean bean = new NsxLoaiLKBean();
 		
 		sqlStatement = "Select nha_san_xuat from thong_tin_lk where loai_lk = ?";
 		statement = getConn().prepareStatement(sqlStatement);
@@ -39,8 +39,8 @@ public class DAOMenuLK extends DAO {
 					nhaSanXuat.add(result.getString(1).toUpperCase());
 				}
 			}
-			Manufactor  manufactor = new Manufactor(loaiLK.get(i), nhaSanXuat);
-			bean.getLoaiLK().add(manufactor);
+			NsxLoaiLK  nsxLoaiLK = new NsxLoaiLK(loaiLK.get(i), nhaSanXuat);
+			bean.getLoaiLK().add(nsxLoaiLK);
 		}
 		return bean;
 	}

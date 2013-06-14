@@ -1,8 +1,7 @@
 $(document).on ('click', '.showCart', function() {
 	var name = this.name;
-	$.post('http://localhost:8080/Project/ShowCartInfo', {maGio:this.name}, function(response) {
+	$.post('http://localhost:8080/Project/ShowCartInfo', {maGio:this.id}, function(response) {
 		var json = jQuery.parseJSON(response);		
-		
 		if (json.status == 'wait') {
 			var output = '<p>Tên khách hàng: ' + json.info.name + '</p>'
 				+ '<p>Địa chỉ: ' + json.info.address + '</p>'
@@ -24,7 +23,7 @@ $(document).on ('click', '.showCart', function() {
 
 $(document).on('click', '.showXK', function() {
 	var name = this.name;
-	$.post('http://localhost:8080/Project/ShowXK', {maGio:this.name}, function(response) {
+	$.post('http://localhost:8080/Project/ShowXK', {maGio:this.id}, function(response) {
 		var json = jQuery.parseJSON(response);
 		var output = '<div id = "' + json.maKH + '"><p>Tên khách hàng: ' + json.info.name + '</p>'
 					+ '<p>Địa chỉ: ' + json.info.address + '</p>'
@@ -36,35 +35,37 @@ $(document).on('click', '.showXK', function() {
         		+ '<td>' + json.tenLK[i] + '</td>' 
         		+ '<td>' + json.maLK[i] + '</td></tr>';
 			}
-			output += '</table><button id="GiaoDich" name=' + name + ' class="">Giao dịch</button><p align="right">' 
-					+ json.total + '</p>';
+			output += '</table><p align="right">Tổng giá trị: ' 
+					+ json.total + '</p><button id="GiaoDich" name=' + name + ' class="">Giao dịch</button>';
 			$('#infoCart').html(output);
 		}
 	});
 });
 
 function refreshListXK() {
-	var out = '<p>Danh sách giỏ hàng chờ xuất kho</p>';
-			$.post('http://localhost:8080/Project/RefreshListCart', function(response) {
-				var json = jQuery.parseJSON(response);
-				for (var i = 0; i < json.listID.length; i++) {
-					out = out.concat('<a class="showCart" href="#" name="' + json.listID[i] + '" style="color: red">Giỏ ' + json.listID[i] + '</a><br></br>');
-				}
-			});
-			alert(out);
-			$('#listCart').html(out);
+	$.post('http://localhost:8080/Project/RefreshListCart', function(response) {
+		refresh(response, '#listCart');
+	});
+}
+
+function refresh(text, selector) {
+	var out = "";
+	if (selector == '#listCart') {
+		out += '<p>Danh sách giỏ hàng chờ xuất kho</p>';
+	} else {
+		out += '<p>Danh sách đã xuất kho và cần giao dịch</p>';
+	}
+	json = jQuery.parseJSON(text);
+	for (var i = 0; i < json.listID.length; i++) {
+		out += '<a class="showCart" href="#" name="' + json.listID[i] + '" style="color: red">Giỏ ' + json.listID[i] + '</a><br></br>';
+	}
+	$(selector).html(out);
 }
 
 function refreshListGD() {
-	var out = '<p>Danh sách đã xuất kho và cần giao dịch</p>';
 	$.post('http://localhost:8080/Project/RefreshListGD', function(response){
-		var json = jQuery.parseJSON(response);
-		for (var i = 0; i < json.listID.length; i++) {
-			out = out.concat('<a class="showXK" href="#" name="' + json.listID[i] + '" style="color: red">Giỏ ' + json.listID[i] + '</a><br></br>');
-		}
+		refresh(response, '#listGD');
 	});
-	alert(out);
-	$('#listGD').html(out);
 }
 
 $(document).on('click', '#xuatKho', function() {

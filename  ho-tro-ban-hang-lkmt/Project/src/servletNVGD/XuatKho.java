@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import dao.DAOCart;
+import dao.DaoGioHang;
 
 /**
  * Servlet implementation class XuatKho
@@ -37,7 +37,7 @@ public class XuatKho extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String maGio = request.getParameter("maGio");
 		String quay = request.getParameter("quay");
-		DAOCart cart = new DAOCart();
+		DaoGioHang cart = new DaoGioHang();
 		try {
 			cart.changeStatusNVGD(maGio, quay);
 			response.getWriter().print("success");

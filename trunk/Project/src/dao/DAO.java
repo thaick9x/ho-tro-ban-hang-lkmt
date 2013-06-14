@@ -2,14 +2,17 @@ package dao;
 
 import java.sql.*;
 
+/*
+ * Class tạo kết nối tới cơ sở dữ liệu
+ */
+
 public class DAO {
-	private String driver;
-	private String connectString;
-	private Connection conn;
-	
+	private String driver; // Tên driver
+	private String connectString; // Chuỗi kết nối
+	private Connection conn; // Kết nối tới CSDL
 	public DAO() {
-		driver = "com.mysql.jdbc.Driver";
-		connectString = "jdbc:mysql://127.0.0.1:3306/mydb";
+		driver = "org.gjt.mm.mysql.Driver";
+		connectString = "jdbc:mysql://127.0.0.1:3306/mydb?useUnicode=true&characterEncoding=UTF-8";
 		try {
 			Class.forName(driver);
 		} catch (ClassNotFoundException e) {
@@ -25,11 +28,4 @@ public class DAO {
 	public Connection getConn() {
 		return conn;
 	}
-	/*
-	protected void connectDB() throws ClassNotFoundException, SQLException {
-		driver = "com.mysql.jdbc.Driver";
-		connectString = "jdbc:mysql://127.0.0.1:3306/mydb";
-		Class.forName(driver);
-		conn = DriverManager.getConnection(connectString, "root" , "");
-	}*/
 }

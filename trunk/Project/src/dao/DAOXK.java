@@ -9,8 +9,8 @@ import com.google.gson.*;
 
 import dto.InfoXK;
 
-public class DAOXK extends DAO {	
-	
+public class DaoXK extends DAO {	
+	// xuát giá linh kiện theo mã linh kiện
 	public long getTotalPrice(LinkedList<String> maLK) throws Exception {
 		String sql = "select gia_niem_yet from thong_tin_lk T , chi_tiet_linh_kien L where ma_lk = ? and T.ma_ten_lk = L.ma_ten_lk";
 		PreparedStatement statement = getConn().prepareStatement(sql);
@@ -25,9 +25,10 @@ public class DAOXK extends DAO {
 		return total;
 	}
 	
+	// lưu thông tin xuất kho
 	public LinkedList<String> setInfoXK(String maGio,String row, String id, String tenLK) throws Exception {
-		DAOCTLK dao = new DAOCTLK();
-		DAOCart cart = new DAOCart();
+		DaoCTLK dao = new DaoCTLK();
+		DaoGioHang cart = new DaoGioHang();
 		Gson json = new Gson();
 		String[] rowID = json.fromJson(row, String[].class);
 		String[] maLK = json.fromJson(id, String[].class);
@@ -48,6 +49,7 @@ public class DAOXK extends DAO {
 		return kq;
 	}
 	
+	// Tìm các mã linh kiện theo giỏ
 	public LinkedList<String> getMaLK(String maGio) throws SQLException {
 		LinkedList<String> kq = new LinkedList<>();
 		String sql = "select ma_lk from thong_tin_xuat_kho where ma_gio = ?";
@@ -60,8 +62,9 @@ public class DAOXK extends DAO {
 		return kq;
 	}
 	
+	// Lấy thông tin từ bảng thong_tin_xuat_kho
 	public InfoXK getInfoXK(String maGio) throws Exception{
-		DAOKhachHang dao = new DAOKhachHang();
+		DaoKhachHang dao = new DaoKhachHang();
 		InfoXK kq = new InfoXK();
 		String sqlStatement = "select * from thong_tin_gio_hang where ma_gio = ?";
 		PreparedStatement statement = getConn().prepareStatement(sqlStatement);
@@ -76,7 +79,7 @@ public class DAOXK extends DAO {
 		kq.setMaLK(getMaLK(maGio));
 		kq.setTotal(Currency.getCurrency(getTotalPrice(kq.getMaLK())));
 		kq.setInfo(dao.getInfoKH(kq.getMaKH()));
-		kq.setTenLK(new DAOInfo().getNameXK(kq.getMaLK()));
+		kq.setTenLK(new DaoTTLK().getNameXK(kq.getMaLK()));
 		return kq;
 	}
 }
