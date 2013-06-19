@@ -118,6 +118,11 @@ insert into chi_tiet_linh_kien (ma_ten_lk, trang_thai, imei, ma_ctnk) values
 (1, 'avail', '313141', '1'),
 (1, 'avail', '413141', '1'),
 (1, 'avail', '513141', '1'),
-(1, 'avail', '613141', '1')
+(1, 'avail', '613141', '1'),
+(7, 'avail', '613241', '7'),
+(7, 'avail', '614141', '7'),
+(7, 'avail', '411141', '7'),
+(7, 'avail', '311141', '7'),
+(7, 'avail', '711141', '7')
 
 

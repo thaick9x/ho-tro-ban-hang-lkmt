@@ -1,20 +1,21 @@
 // Gửi thông tin xuất kho từ kho tới cho nhân viên giao dịch ở quầy tương ứng
 $(document).on('click', '#sent', function() {
-	var serial = new Array();
-	var idArr = new Array();
-	var maTen = new Array();
+	var serial = new Array(); // Mã giỏ
+	var idArr = new Array(); // id của tr
+	var maTen = new Array(); // mã tên linh kiện
 	var name = this.name;
-	$('div[id="' + name + '"').find('input').each(function() {
+	
+	$('div[id="' + name + '"]').find('input').each(function() {
 		maTen.push(this.id);
 		serial.push(this.value);
 	});
-	$('div[id="' + name + '"').find('tr').each(function(i) {
+	
+	$('div[id="' + name + '"]').find('tr').each(function(i) {
 		if (i > 0) {
 			idArr.push(this.id);
 		}
 	});
-	$.post('http://localhost:8080/Project/CheckXK', {maGio:name,idRow:JSON.stringify(idArr), maLK:JSON.stringify(serial), maTenLK:JSON.stringify(maTen)}, function(text) {
-		alert(text);
+	$.post('http://localhost:8080/Project/CheckXK', {maGio:name, idRow:JSON.stringify(idArr), maLK:JSON.stringify(serial), maTenLK:JSON.stringify(maTen)}, function(text) {
 		if (text == "success") {
 			refreshPage();
 		}
@@ -36,7 +37,6 @@ $(document).on('click', '#sent', function() {
 // Refresh lại trang chính của nhân viên kho sau khi đã gửi đi 1 giỏ
 function refreshPage() {
 	$.post('http://localhost:8080/Project/Refresh', function(response) {
-		alert(response);
 		refresh(response);
 	});
 }

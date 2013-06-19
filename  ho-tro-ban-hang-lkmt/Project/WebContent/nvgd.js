@@ -1,6 +1,6 @@
 $(document).on ('click', '.showCart', function() {
-	var name = this.name;
-	$.post('http://localhost:8080/Project/ShowCartInfo', {maGio:this.id}, function(response) {
+	var name = this.id;
+	$.post('http://localhost:8080/Project/ShowCartInfo', {maGio:name}, function(response) {
 		var json = jQuery.parseJSON(response);		
 		if (json.status == 'wait') {
 			var output = '<p>Tên khách hàng: ' + json.info.name + '</p>'
@@ -22,8 +22,9 @@ $(document).on ('click', '.showCart', function() {
 });
 
 $(document).on('click', '.showXK', function() {
-	var name = this.name;
-	$.post('http://localhost:8080/Project/ShowXK', {maGio:this.id}, function(response) {
+	alert($('#infoNV').name);
+	var name = this.id;
+	$.post('http://localhost:8080/Project/ShowXK', {maGio:name}, function(response) {
 		var json = jQuery.parseJSON(response);
 		var output = '<div id = "' + json.maKH + '"><p>Tên khách hàng: ' + json.info.name + '</p>'
 					+ '<p>Địa chỉ: ' + json.info.address + '</p>'
@@ -56,8 +57,12 @@ function refresh(text, selector) {
 		out += '<p>Danh sách đã xuất kho và cần giao dịch</p>';
 	}
 	json = jQuery.parseJSON(text);
-	for (var i = 0; i < json.listID.length; i++) {
-		out += '<a class="showCart" href="#" name="' + json.listID[i] + '" style="color: red">Giỏ ' + json.listID[i] + '</a><br></br>';
+	if (json.list.length > 0) {
+		for (var i = 0; i < json.list.length; i++) {
+			out += '<a class="showCart" href="#" id="' + json.listID[i] + '" style="color: red">Giỏ ' + json.listID[i] + '</a><br></br>';
+		}
+	} else {
+		out += '';
 	}
 	$(selector).html(out);
 }
@@ -82,7 +87,7 @@ $(document).on('click', '#xuatKho', function() {
 });
 $(document).on('click', '#GiaoDich', function() {
 	var name = this.name;
-	$.post('http://localhost:8080/Project/LuuGiaoDich', {maGio:name, maNV:"1"}, function(text) {
+	$.post('http://localhost:8080/Project/LuuGiaoDich', {maGio:name, maNV:$('#infoNV').name}, function(text) {
 		if (text == 'success') {
 			$('#infoCart').text("Lưu thông tin giao dịch thành công.");
 			refreshListGD();

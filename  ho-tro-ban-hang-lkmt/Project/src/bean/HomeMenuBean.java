@@ -14,14 +14,7 @@ public class HomeMenuBean {
 	private LinkedList<String> imgUrl;
 	private LinkedList<String> maTenLK;
 	
-	public LinkedList<String> getMaTenLK() {
-		return maTenLK;
-	}
-
-	public void setMaTenLK(LinkedList<String> maTenLK) {
-		this.maTenLK = maTenLK;
-	}
-
+	//No-argument constructor
 	public HomeMenuBean() {
 		tenLK = new LinkedList<String>();
 		soLuongLK = new LinkedList<Integer>();
@@ -29,6 +22,16 @@ public class HomeMenuBean {
 		imgUrl = new LinkedList<String>();
 		maTenLK = new LinkedList<>();
 	}
+	
+	//Get-set function
+	public LinkedList<String> getMaTenLK() {
+		return maTenLK;
+	}
+
+	public void setMaTenLK(LinkedList<String> maTenLK) {
+		this.maTenLK = maTenLK;
+	}
+	
 	
 	public LinkedList<String> getImgUrl() {
 		return imgUrl;
@@ -56,5 +59,5 @@ public class HomeMenuBean {
 	public void setGiaLK(LinkedList<String> giaLK) {
 		this.giaLK = giaLK;
 	}
-	
+	//End of get-set function
 }

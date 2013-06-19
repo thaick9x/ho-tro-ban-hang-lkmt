@@ -2,13 +2,11 @@ package dao;
 
 import java.sql.*;
 import java.util.LinkedList;
-
 import dto.CartInfo;
 import dto.InfoKH;
 import dto.InfoShowCart;
 import dto.ItemsInCart;
 import bean.KhoBean;
-import bean.DsGioHangBean;
 import bean.DsGioGD;
 
 /*
@@ -127,15 +125,15 @@ public class DaoGioHang extends DAO {
 	}
 	
 	// xuất danh sách các giỏ hàng đang chờ xuất kho
-	public DsGioHangBean getListCart() throws Exception {
-		DsGioHangBean kq = new DsGioHangBean();
+	public DsGioGD getListCart() throws Exception {
+		DsGioGD kq = new DsGioGD();
 		String sqlStatement = "select ma_gio, trang_thai from thong_tin_gio_hang";
 
 		PreparedStatement statement = getConn().prepareStatement(sqlStatement);
 		ResultSet result = statement.executeQuery();
 		while (result.next()) {
 			if (result.getString(2).equals("wait")) {
-				kq.getListID().add(result.getString(1));
+				kq.getList().add(result.getString(1));
 			}
 		}
 		return kq;
@@ -169,7 +167,6 @@ public class DaoGioHang extends DAO {
 			CartInfo kq = new CartInfo();
 			ResultSet result = statement.executeQuery();
 			while (result.next()) {
-				
 				kq.setMaGio(s);
 				kq.setQuay(result.getString(4));
 				getCTCart(kq);
@@ -214,7 +211,7 @@ public class DaoGioHang extends DAO {
 	// Xuất danh sách mã giỏ đã được yêu cầu xuất kho
 	public LinkedList<String> getExportCart() throws SQLException {
 		LinkedList<String> kq = new LinkedList<>();
-		String sqlStatement = "select ma_gio from thong_tin_gio_hang where trang_thai = 'export' limit 3"; 
+		String sqlStatement = "select ma_gio from thong_tin_gio_hang where trang_thai = 'export'"; 
 		PreparedStatement statement = getConn().prepareStatement(sqlStatement);
 		ResultSet result = statement.executeQuery();
 		while (result.next()) {

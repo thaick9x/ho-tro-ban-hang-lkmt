@@ -22,7 +22,7 @@ $(document).on('focusout', '#quantity', function () {
 	}
 });
 
-window.onbeforeunload = confirmExit;
+window.onbeforeunload = confirmExit();
 function confirmExit()
 {
   $.get('http://localhost:8080/Project/Logout', function() {

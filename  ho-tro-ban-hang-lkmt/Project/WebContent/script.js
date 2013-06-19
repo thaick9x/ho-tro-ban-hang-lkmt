@@ -59,7 +59,7 @@ function search() {
 $(function() {                        
 	$("[type='sort']").click(function() {
     	old = $('#menu').html();
-        $.post('http://localhost:8080/Project/SortItems', {items:this.name}, function(responseText) { 
+        $.get('http://localhost:8080/Project/SortItems', {items:this.name}, function(responseText) { 
         	showItems(responseText);
         });
     });

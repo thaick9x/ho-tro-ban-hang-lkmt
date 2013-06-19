@@ -18,8 +18,8 @@
 	<jsp:useBean id="infoNVGD" class="bean.ThongTinNV" scope="request" />
 	
 	<%--Chứa danh sách các giỏ hàng cần xuất kho--%>
-	<jsp:useBean id="list" class="bean.DsGioHangBean" scope="request" />
-	<% LinkedList<String> listCart = list.getListID(); %>
+	<jsp:useBean id="list" class="bean.DsGioGD" scope="request" />
+	<% LinkedList<String> listCart = list.getList(); %>
 	
 	<%--Chứa danh sách các giỏ hàng đã được xuất kho--%>
 	<jsp:useBean id="ready" class="bean.DsGioGD" scope="request" />

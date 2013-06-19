@@ -29,7 +29,20 @@ public class GetInfoLK extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		String maTenLK = request.getParameter("serial");
+		System.out.println(maTenLK);
+		DaoTTLK dao = new DaoTTLK();
+		ItemsInfo info = new ItemsInfo();
+		Gson json = new Gson();
+		response.setContentType("text");
+		response.setCharacterEncoding("UTF-8");
+		try {
+			info = dao.getInfo(maTenLK);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		response.getWriter().write(json.toJson(info));
 	}
 
 	/**
@@ -50,5 +63,4 @@ public class GetInfoLK extends HttpServlet {
 		}
 		response.getWriter().write(json.toJson(info));
 	}
-
 }

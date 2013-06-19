@@ -8,7 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import dao.DaoLocLK;
+import dao.DaoTTLK;
 import bean.HomeMenuBean;
 
 import com.google.gson.*;
@@ -32,7 +32,31 @@ public class SortItems extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		String items = request.getParameter("items");
+		Gson json = new Gson();
+		DaoTTLK dao = new DaoTTLK();
+		HomeMenuBean bean = new HomeMenuBean();
+		PrintWriter out = response.getWriter();
+		
+		if (items.contains("-")) {
+			String[] dkSort = items.split("-");
+			try {
+				bean = dao.sortItems(dkSort[0], dkSort[1]);
+			} catch (Exception e) {
+				out.write(e.getMessage());
+			}
+		} else {
+			try {
+				bean = dao.sortItems(items);
+			} catch (Exception ex) {
+				out.write(ex.getMessage());
+			}
+		}
+		String kq = json.toJson(bean);
+	    response.setContentType("text/html");  // Set content type of the response so that jQuery knows what it can expect.
+	    response.setCharacterEncoding("UTF-8"); // You want world domination, huh?
+	    request.setAttribute("bean", kq); 
+	    response.sendRedirect("SortItems.jsp");
 	}
 
 	/**
@@ -41,7 +65,7 @@ public class SortItems extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String items = request.getParameter("items");
 		Gson json = new Gson();
-		DaoLocLK dao = new DaoLocLK();
+		DaoTTLK dao = new DaoTTLK();
 		HomeMenuBean bean = new HomeMenuBean();
 		PrintWriter out = response.getWriter();
 		

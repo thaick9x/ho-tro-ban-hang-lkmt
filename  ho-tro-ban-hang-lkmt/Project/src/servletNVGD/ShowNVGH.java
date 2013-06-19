@@ -8,7 +8,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import bean.DsGioHangBean;
 import bean.DsGioGD;
 import bean.ThongTinNV;
 import dao.DaoGioHang;
@@ -40,7 +39,7 @@ public class ShowNVGH extends HttpServlet {
 		else {
 			DaoGioHang dao = new DaoGioHang();
 			try {
-				DsGioHangBean list = dao.getListCart();
+				DsGioGD list = dao.getListCart();
 				DsGioGD ready = dao.getReadyCarts("1");
 				request.setAttribute("infoNVGD", infoNV);
 				request.setAttribute("list", list);

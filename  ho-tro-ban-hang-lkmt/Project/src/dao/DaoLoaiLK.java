@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import bean.NsxLoaiLK;
 import bean.NsxLoaiLKBean;
 
-public class DaoMenuLK extends DAO {
+public class DaoLoaiLK extends DAO {
 	private PreparedStatement statement;
 	private String sqlStatement;
 	

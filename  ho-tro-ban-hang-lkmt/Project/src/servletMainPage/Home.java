@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import bean.HomeMenuBean;
 import bean.NsxLoaiLKBean;
-import dao.DaoMenuLK;
+import dao.DaoLoaiLK;
 import dao.DaoTTLK;
 
 /**
@@ -34,7 +34,7 @@ public class Home extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		DaoTTLK daoMain = new DaoTTLK();
-		DaoMenuLK daoLK = new DaoMenuLK();
+		DaoLoaiLK daoLK = new DaoLoaiLK();
 		try {
 			HomeMenuBean hotBean = daoMain.getItems(1);
 			HomeMenuBean newBean = daoMain.getItems(2);

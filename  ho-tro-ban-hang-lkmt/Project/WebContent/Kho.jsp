@@ -4,9 +4,9 @@
 <!doctype html>
 <html>
 <head>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="kho.js"></script>
-<script src="misc.js"></script>
+<!--<script src="misc.js"></script> -->
 <title>Nhân viên kho</title>
 </head>
 <body>
