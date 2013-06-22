@@ -9,7 +9,7 @@ USE `mydb` ;
 -- Table `mydb`.`Loai_LK`
 -- -----------------------------------------------------
 CREATE  TABLE IF NOT EXISTS `mydb`.`Loai_LK` (
-  `Loai_LK` VARCHAR(10) NOT NULL ,
+  `Loai_LK` VARCHAR(30) NOT NULL ,
   `XmlTTKT` VARCHAR(255) NOT NULL ,
   PRIMARY KEY (`Loai_LK`) )
 ENGINE = InnoDB;
@@ -24,7 +24,7 @@ CREATE  TABLE IF NOT EXISTS `mydb`.`Thong_Tin_LK` (
   `Gia_Niem_Yet` DECIMAL(9) NOT NULL ,
   `Bao_Hanh` SMALLINT NOT NULL ,
   `Nha_San_Xuat` VARCHAR(45) NOT NULL ,
-  `Loai_LK` VARCHAR(10) NOT NULL ,
+  `Loai_LK` VARCHAR(30) NOT NULL ,
   `Luot_Truy_Cap` SMALLINT NOT NULL ,
   `Tinh_Trang` VARCHAR(45) NOT NULL ,
   `So_Luong` INT NOT NULL ,
@@ -164,7 +164,7 @@ CREATE  TABLE IF NOT EXISTS `mydb`.`Thong_Tin_Khach_Hang` (
   `Ten_KH` VARCHAR(45) NOT NULL ,
   `Dia_Chi_KH` VARCHAR(255) NOT NULL ,
   `SDT_KH` VARCHAR(20) NOT NULL ,
-  `email` VARCHAR(45) NOT NULL ,
+  `email` VARCHAR(45) ,
   `user_id` INT NULL ,
   PRIMARY KEY (`Ma_KH`) ,
   UNIQUE INDEX `SDTKH_UNIQUE` (`SDT_KH` ASC) ,
