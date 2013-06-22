@@ -1,0 +1,116 @@
+﻿html, body, div , h3, h2, h4, h5, h6, p,a, em, img,
+strong, ol, ul, li {
+	margin:0px;
+	padding:0px;
+	border:0px;
+	outline:0px;
+	vertical-align: baseline;
+	background: transparent;
+	text-decoration:none;
+	font-family:Tahoma,Arial;
+	font-size:12px;
+}
+div{margin:0 auto; padding:0;}
+h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,form,img,p{
+margin:0; padding:0; border:none; list-style-type:none;
+}
+h1,h2,h3,h4,h5,h6
+{
+	font-size:12px;
+
+}
+body
+{ font-size:12px; font-family:"Verdana", Arial; line-height:150%; margin:0; padding:0; color:#;
+	background-image: url(cssImg/background.png), url(cssImg/background-3.png);
+	background-position: top left, bottom left;
+	background-repeat: repeat-x, repeat-x;
+}
+h2
+{
+	color:#FFF900;
+	font-weight:bold;
+	font-size: 18px;
+	background: url(cssImg/Header2.png) repeat-x;
+	align="left";
+	text-indent:30px;
+	
+}
+
+p	/*tạo viền gạch - */
+{
+	border:1px dashed #CAD4D9;
+
+}
+.price{color:#FF9800; font-weight:bold; font-size:14px;}
+.p_Catename{color:#0047B3; font-weight:bold; font-size:14px; text-align:left;background-image:"cssImg/title_bg.gif"}
+.hethang{color:#F0000B; font-weight:bold; font-size:14px;}
+/*.tenhangsx{font-weight:bold; color:#755A3E; font-size:12px;}*/
+.button{text-decoration:none; text-align:center; 
+ padding:8px 14px; 
+ border:none; 
+ -webkit-border-radius:26px 26px 26px 0px; 	 				 border-radius: 26px 26px 26px 0px; 					-moz-border-radius-topleft:26px; 					-moz-border-radius-topright:26px; 					-moz-border-radius-bottomleft:0px; 					-moz-border-radius-bottomright:26px;  
+ font:11px Verdana, Geneva, sans-serif; 
+ font-weight:bold; 
+ color:#E5FFFF; 
+ background-color:#3ba4c7; 
+ background-image: -moz-linear-gradient(top, #3ba4c7 0%, #1982a5 100%); 
+ background-image: -webkit-linear-gradient(top, #3ba4c7 0%, #1982a5 100%); 
+ background-image: -o-linear-gradient(top, #3ba4c7 0%, #1982a5 100%); 
+ background-image: -ms-linear-gradient(top, #3ba4c7 0% ,#1982a5 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1982a5', endColorstr='#1982a5',GradientType=0 ); 
+ background-image: linear-gradient(top, #3ba4c7 0% ,#1982a5 100%);   
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 5px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 5px #ffffff;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 5px #ffffff;  
+  
+  }.button:hover{
+ padding:8px 14px; 
+ border:none; 
+ -webkit-border-radius:26px 26px 26px 0px; 	 				 border-radius: 26px 26px 26px 0px; 					-moz-border-radius-topleft:26px; 					-moz-border-radius-topright:26px; 					-moz-border-radius-bottomleft:0px; 					-moz-border-radius-bottomright:26px;  
+ font:11px Verdana, Geneva, sans-serif; 
+ font-weight:bold; 
+ color:#E5FFFF; 
+ background-color:#9dd1e3; 
+ background-image: -moz-linear-gradient(top, #9dd1e3 0%, #8cc1d2 100%); 
+ background-image: -webkit-linear-gradient(top, #9dd1e3 0%, #8cc1d2 100%); 
+ background-image: -o-linear-gradient(top, #9dd1e3 0%, #8cc1d2 100%); 
+ background-image: -ms-linear-gradient(top, #9dd1e3 0% ,#8cc1d2 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8cc1d2', endColorstr='#8cc1d2',GradientType=0 ); 
+ background-image: linear-gradient(top, #9dd1e3 0% ,#8cc1d2 100%);   
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 5px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 5px #ffffff;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 5px #ffffff;  
+  
+ }.button:active{
+ padding:8px 14px; 
+ border:none; 
+ -webkit-border-radius:26px 26px 26px 0px; 	 				 border-radius: 26px 26px 26px 0px; 					-moz-border-radius-topleft:26px; 					-moz-border-radius-topright:26px; 					-moz-border-radius-bottomleft:0px; 					-moz-border-radius-bottomright:26px;  
+ font:11px Verdana, Geneva, sans-serif; 
+ font-weight:bold; 
+ color:#E5FFFF; 
+ background-color:#1e5264; 
+ background-image: -moz-linear-gradient(top, #1e5264 0%, #0d4253 100%); 
+ background-image: -webkit-linear-gradient(top, #1e5264 0%, #0d4253 100%); 
+ background-image: -o-linear-gradient(top, #1e5264 0%, #0d4253 100%); 
+ background-image: -ms-linear-gradient(top, #1e5264 0% ,#0d4253 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d4253', endColorstr='#0d4253',GradientType=0 ); 
+ background-image: linear-gradient(top, #1e5264 0% ,#0d4253 100%);   
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 5px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 5px #ffffff;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 5px #ffffff;  
+  
+ }
+
+.carobangthongtin
+{
+	background:url(cssImg/bg_header.png) repeat;
+}
+
+.p2
+{
+	border-width:0px;
+}
+
+
+
+
