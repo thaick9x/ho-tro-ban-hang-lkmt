@@ -1,4 +1,4 @@
-var soLuong;
+﻿var soLuong;
 var idArr;
 
 //Hiện giỏ hàng
@@ -48,11 +48,20 @@ $(document).on ('click', '#addCart', function() {
 
 //Xử lý nhấn vào giỏ hàng ở góc phải
 $(document).on ('click', '#showCart', function(e) {
-	var href = ('ShowCartItems?cart=' + $.cookie('CartArr'));
-	changeHref();
-	showCart(jQuery.parseJSON($.cookie('CartArr')));
-    window.history.pushState(null, null, href);
-    e.preventDefault();
+	var c_value = $.cookie('CartArr');
+	if (c_value == null || c_value == '' ) {
+		var items = new Array();
+		$.cookie('CartArr', JSON.stringify(items));
+		showCart(items);
+		var href = ('ShowCartItems?cart=[]');
+		windown.history.pushState(null, null, href);
+	} else {
+		var href = ('ShowCartItems?cart=' + c_value);
+		changeHref();
+		showCart(jQuery.parseJSON($.cookie('CartArr')));
+		window.history.pushState(null, null, href);
+	}
+	e.preventDefault();
 });
 
 //Xóa 1 linh kiện ra khỏi giỏ hàng
